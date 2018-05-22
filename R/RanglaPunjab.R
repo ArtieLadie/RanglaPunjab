@@ -26,6 +26,7 @@ PunjabiPalette <- list (
 #' @param string Palette name
 #' @return Vector of 5 color values
 #' @export
+#' @import tidyverse
 #' @examples
 #' RanglaPunjab("Teej")
 RanglaPunjab <- function(name){
@@ -88,6 +89,7 @@ PaintPalette <- function(name, name2) {
 #' @param string palette name
 #' @return image of reference photo with palette
 #' @export
+#' @import jpeg
 #' @examples
 #' ShowPalettePhoto("GoldenTemple")
 ShowPalettePhoto <- function(name){
