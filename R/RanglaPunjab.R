@@ -1,6 +1,3 @@
-library(tidyverse)
-library(jpeg)
-
 
 
 # List of palettes
