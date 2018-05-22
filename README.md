@@ -8,6 +8,8 @@ Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=
 
 devtools::install_github("ArtieLadie/RanglaPunjab")
 
+### Palettes
+
 ### Amritsari Kulcha
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
