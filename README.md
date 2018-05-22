@@ -8,7 +8,7 @@ Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=
 
 devtools::install_github("ArtieLadie/RanglaPunjab")
 
-### Palettes
+# Palettes
 
 ### Amritsari Kulcha
 
