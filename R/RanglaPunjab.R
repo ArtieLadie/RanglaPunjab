@@ -98,7 +98,7 @@ ShowPalettePhoto <- function(name){
   if (is.null(pal))
     stop("palette not found.")
   x <- tolower(name)
-  x <- paste ("./Photos/",x,".jpg", sep="")
+  x <- paste ("./img/",x,".jpg", sep="")
   x
   jj <- readJPEG(x,native=TRUE)
   plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
