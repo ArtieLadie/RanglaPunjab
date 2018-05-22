@@ -5,9 +5,9 @@ R code that defines color palettes based on the unique, vibrant culture of [Punj
 Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=a4k7Alj_pjk).
 
 ## Installation
-
+```r
 devtools::install_github("ArtieLadie/RanglaPunjab")
-
+```
 # Palettes
 
 ### Amritsari Kulcha
