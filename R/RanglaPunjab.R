@@ -1,5 +1,4 @@
 
-
 # List of palettes
 PunjabiPalette <- list (
   AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
