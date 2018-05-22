@@ -1,9 +1,12 @@
 # RanglaPunjab
 
-
 R code that defines color palettes based on the unique, vibrant culture of [Punjab, India](https://wikitravel.org/en/Punjab_(India)). 
 
 Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=a4k7Alj_pjk).
+
+## Installation
+
+devtools::install_github("ArtieLadie/RanglaPunjab")
 
 ### Amritsari Kulcha
 
