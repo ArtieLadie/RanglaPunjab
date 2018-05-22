@@ -16,5 +16,5 @@ image of reference photo with palette
 Show Palette Photo
 }
 \examples{
-RShowPalettePhoto("GoldenTemple")
+ShowPalettePhoto("GoldenTemple")
 }

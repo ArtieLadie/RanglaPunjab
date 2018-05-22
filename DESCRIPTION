@@ -1,9 +1,10 @@
 Package: RanglaPunjab
 Title: Provide Palette of Colors
 Version: 0.0.0.9000
-Authors@R: person("Artie", "Ladie", email = "first.last@example.com", role = c("aut", "cre"))
+Authors@R: "ArtieLadie <nospam@secretemail.com> [aut, cre]"
 Description: Provide palette of colors to use, merge, and view
 Depends: R (>= 3.5.0)
+Imports: tidyverse, jpeg
 License: GPL-2
 Encoding: UTF-8
 LazyData: FALSE

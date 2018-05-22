@@ -93,7 +93,7 @@ PaintPalette <- function(name, name2) {
 #' @return image of reference photo with palette
 #' @export
 #' @examples
-#' RShowPalettePhoto("GoldenTemple")
+#' ShowPalettePhoto("GoldenTemple")
 ShowPalettePhoto <- function(name){
 
   pal <- RanglaPunjab(name)
