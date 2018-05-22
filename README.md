@@ -94,3 +94,27 @@ Because I love colors so much.
 Phulkaris are usually made into [Dupattas](https://simple.wikipedia.org/wiki/Dupatta) to be worn with [Salwar Kameez](http://www.panashindia.com/salwar/punjabi-suits) (Punjabi ladies's suit), as shown in the reference photo.
 
 ![Phulkari](https://github.com/ArtieLadie/RanglaPunjab/blob/master/Photos/phulkari2.JPG)
+
+### Jutti
+
+[Jutti](https://en.wikipedia.org/wiki/Jutti) are shoes. Who can live without shoes?
+
+![Jutti](https://github.com/ArtieLadie/RanglaPunjab/blob/master/Photos/jutti.JPG)
+
+### Jutti 2
+
+More colorful, the better!
+
+![Jutti 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/Photos/jutti2.JPG)
+
+### Jutti 3
+
+And who cannot love jutti in every conceivable design!
+
+![Jutti 3](https://github.com/ArtieLadie/RanglaPunjab/blob/master/Photos/jutti3.JPG)
+
+### Paranda
+
+With [Paranda](https://www.utsavpedia.com/attires/paranda-or-parandi-from-punjab/), one can never have a bad hair day!
+
+![Paranda](https://github.com/ArtieLadie/RanglaPunjab/blob/master/Photos/paranda.JPG)
