@@ -70,9 +70,11 @@ PaintPalette <- function(name, name2) {
 
   x <- RanglaPunjab(name)
   if (!missing(name2)){
-    y <- RanglaPunjab(name2)
-    name <- paste(name,"&",name2,sep=" ")
-    x = unique(c(x,y))
+    if(name != name2){
+      y <- RanglaPunjab(name2)
+      name <- paste(name,"&",name2,sep=" ")
+      x = unique(c(x,y))
+    }
   }
 
   n <- length(x)
@@ -98,7 +100,7 @@ ShowPalettePhoto <- function(name){
   if (is.null(pal))
     stop("palette not found.")
   x <- tolower(name)
-  x <- paste ("./img/",x,".jpg", sep="")
+  x <- paste ("img/",x,".jpg", sep="")
   x
   jj <- readJPEG(x,native=TRUE)
   plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
