@@ -4,7 +4,7 @@ PunjabiPalette <- list (
   AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
   CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
   FieldsOfPunjab = c("#fda726", "#d75b07", "#702e06", "#514617", "#313407"),
-  FieldsOfPunjab2 = c("9aa5b4", "#516e9c", "#13306a", "#94aa0b", "#a36316"),
+  FieldsOfPunjab2 = c("#9aa5b4", "#516e9c", "#13306a", "#94aa0b", "#a36316"),
   GoldenTemple = c("#bdcad0", "#5f8abf", "#ffd860", "#d88821", "#672006"),
   GoldenTemple2 = c("#7d84cb", "#374890","#c2592e", "#fa5102", "#722416"),
   Pindh = c("#5eb39c", "#1f6562","#2168c2", "#d77e5f", "#5f3e25"),
