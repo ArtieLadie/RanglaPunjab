@@ -68,11 +68,12 @@ MergePalette <- function(name,name2){
 #' PaintPalette("FieldsOfPunjab","Jutti")
 PaintPalette <- function(name, name2) {
 
-
-  x <- RanglaPunjab(name)
-  if (!missing(name2)){
+  if (missing(name2)){
+    x <- RanglaPunjab(name)
+  }
+  else if (!missing(name2)){
+    y <- RanglaPunjab(name2)
     if(name != name2){
-      y <- RanglaPunjab(name2)
       name <- paste(name,"&",name2,sep=" ")
       x = unique(c(x,y))
     }
