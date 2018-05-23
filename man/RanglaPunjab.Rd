@@ -13,7 +13,7 @@ RanglaPunjab(name)
 Vector of 5 color values
 }
 \description{
-Palette of 5 Colors
+This function returns a palette of 5 colors
 }
 \examples{
 RanglaPunjab("Teej")

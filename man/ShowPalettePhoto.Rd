@@ -13,7 +13,7 @@ ShowPalettePhoto(name)
 image of reference photo with palette
 }
 \description{
-Show Palette Photo
+This function shows photo that inspired a palette
 }
 \examples{
 ShowPalettePhoto("GoldenTemple")

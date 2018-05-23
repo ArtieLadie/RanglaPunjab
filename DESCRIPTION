@@ -2,7 +2,9 @@ Package: RanglaPunjab
 Title: Provide Palette of Colors
 Version: 0.0.0.9000
 Authors@R: "ArtieLadie <nospam@secretemail.com> [aut, cre]"
-Description: Provide palette of colors to use, merge, and view
+Description: Provide palette of colors to use. If 5 colors are not enough, users can merge palettes.
+             To get a preview of palettes, users can paint 1 or two palettes. Of course there is 
+             also the option to view the photo that inspired a particular palette.
 Depends: R (>= 3.5.0)
 License: GPL-2
 Encoding: UTF-8

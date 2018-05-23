@@ -23,6 +23,7 @@ PunjabiPalette <- list (
 
 
 #' Palette of 5 Colors
+#' @description This function returns a palette of 5 colors
 #' @param string Palette name
 #' @return Vector of 5 color values
 #' @export
@@ -40,7 +41,8 @@ RanglaPunjab <- function(name){
 
 
 #' Merge Palette
-#' @param string,string 2 palette names
+#' @description This function returns a palette of 10 colors (in the unlikely event there are duplicates, then return less than 10)
+#' @param string, string 1 or 2 palette name(s)
 #' @return Vector of 10 color values (in the unlikely event there are duplicates, then return less than 10)
 #' @export
 #' @examples
@@ -60,6 +62,7 @@ MergePalette <- function(name,name2){
 
 
 #' Paint Palette
+#' @description This function paints an image of 1 or 2 palettes
 #' @param string,string 1 or 2 palette names
 #' @return image of colors and description
 #' @export
@@ -68,10 +71,8 @@ MergePalette <- function(name,name2){
 #' PaintPalette("FieldsOfPunjab","Jutti")
 PaintPalette <- function(name, name2) {
 
-  if (missing(name2)){
-    x <- RanglaPunjab(name)
-  }
-  else if (!missing(name2)){
+  x <- RanglaPunjab(name)
+  if (!missing(name2)){
     y <- RanglaPunjab(name2)
     if(name != name2){
       name <- paste(name,"&",name2,sep=" ")
@@ -90,6 +91,7 @@ PaintPalette <- function(name, name2) {
 }
 
 #' Show Palette Photo
+#' @description This function shows photo that inspired a palette
 #' @param string palette name
 #' @return image of reference photo with palette
 #' @export

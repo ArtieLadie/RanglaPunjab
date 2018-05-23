@@ -13,7 +13,7 @@ PaintPalette(name, name2)
 image of colors and description
 }
 \description{
-Paint Palette
+This function paints an image of 1 or 2 palettes
 }
 \examples{
 PaintPalette("Pindh")
