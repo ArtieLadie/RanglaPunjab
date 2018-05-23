@@ -68,6 +68,7 @@ MergePalette <- function(name,name2){
 #' PaintPalette("FieldsOfPunjab","Jutti")
 PaintPalette <- function(name, name2) {
 
+
   x <- RanglaPunjab(name)
   if (!missing(name2)){
     if(name != name2){
@@ -100,8 +101,7 @@ ShowPalettePhoto <- function(name){
   if (is.null(pal))
     stop("palette not found.")
   x <- tolower(name)
-  x <- paste (x,".jpg", sep="")
-  x
+  x <- paste ("./img/",x,".jpg", sep="")
   jj <- readJPEG(x,native=TRUE)
   plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
   rasterImage(jj,0,0,1,1)
