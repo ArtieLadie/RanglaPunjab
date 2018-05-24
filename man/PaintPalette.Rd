@@ -7,7 +7,9 @@
 PaintPalette(name, name2)
 }
 \arguments{
-\item{string, string}{1 or 2 palette names}
+\item{name}{Name of 1st palette}
+
+\item{name2}{Name of 2nd (optional) palette}
 }
 \value{
 image of colors and description

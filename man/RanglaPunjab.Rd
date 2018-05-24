@@ -7,7 +7,7 @@
 RanglaPunjab(name)
 }
 \arguments{
-\item{string}{Palette name}
+\item{name}{Palette name}
 }
 \value{
 Vector of 5 color values

@@ -7,7 +7,9 @@
 MergePalette(name, name2)
 }
 \arguments{
-\item{string, }{string 1 or 2 palette name(s)}
+\item{name}{Name of 1st palette}
+
+\item{name2}{Name of 2nd palette}
 }
 \value{
 Vector of 10 color values (in the unlikely event there are duplicates, then return less than 10)

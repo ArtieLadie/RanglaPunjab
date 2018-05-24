@@ -7,7 +7,7 @@
 ShowPalettePhoto(name)
 }
 \arguments{
-\item{string}{palette name}
+\item{name}{palette name}
 }
 \value{
 image of reference photo with palette

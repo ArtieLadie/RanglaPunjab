@@ -24,10 +24,11 @@ PunjabiPalette <- list (
 
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
-#' @param string Palette name
+#' @param name Palette name
+#' @usage RanglaPunjab(name)
 #' @return Vector of 5 color values
-#' @export
 #' @import tidyverse
+#' @export
 #' @examples
 #' RanglaPunjab("Teej")
 RanglaPunjab <- function(name){
@@ -42,7 +43,9 @@ RanglaPunjab <- function(name){
 
 #' Merge Palette
 #' @description This function returns a palette of 10 colors (in the unlikely event there are duplicates, then return less than 10)
-#' @param string, string 1 or 2 palette name(s)
+#' @param name Name of 1st palette
+#' @param name2 Name of 2nd palette
+#' @usage MergePalette(name, name2)
 #' @return Vector of 10 color values (in the unlikely event there are duplicates, then return less than 10)
 #' @export
 #' @examples
@@ -63,7 +66,9 @@ MergePalette <- function(name,name2){
 
 #' Paint Palette
 #' @description This function paints an image of 1 or 2 palettes
-#' @param string,string 1 or 2 palette names
+#' @param name Name of 1st palette
+#' @param name2 Name of 2nd (optional) palette
+#' @usage PaintPalette(name, name2)
 #' @return image of colors and description
 #' @export
 #' @examples
@@ -92,10 +97,11 @@ PaintPalette <- function(name, name2) {
 
 #' Show Palette Photo
 #' @description This function shows photo that inspired a palette
-#' @param string palette name
+#' @param name palette name
+#' @usage ShowPalettePhoto(name)
 #' @return image of reference photo with palette
-#' @export
 #' @import jpeg
+#' @export
 #' @examples
 #' ShowPalettePhoto("GoldenTemple")
 ShowPalettePhoto <- function(name){
