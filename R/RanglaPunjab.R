@@ -86,13 +86,13 @@ PaintPalette <- function(name, name2) {
   }
 
   n <- length(x)
-  old <- par(mar = c(0.5, 0.5, 0.5, 0.5))
-  on.exit(par(old))
+  old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
+  on.exit(graphics::par(old))
 
-  image(1:n, 1, as.matrix(1:n), col = x,
+  graphics::image(1:n, 1, as.matrix(1:n), col = x,
         ylab = "", xaxt = "n", yaxt = "n", bty = "n")
-  rect(0, 0.9, n + 1, 1.1, col = rgb(1, 1, 1, 0.8), border = NA)
-  text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
+  graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
+  graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
 #' Show Palette Photo
@@ -113,6 +113,6 @@ ShowPalettePhoto <- function(name){
   sysloc <- system.file(package="RanglaPunjab")
   x <- paste (sysloc,"/img/",x,".jpg", sep="")
   jj <- readJPEG(x,native=TRUE)
-  plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
-  rasterImage(jj,0,0,1,1)
+  graphics::plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
+  graphics::rasterImage(jj,0,0,1,1)
 }
