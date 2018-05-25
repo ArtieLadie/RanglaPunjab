@@ -21,6 +21,18 @@ PunjabiPalette <- list (
   Paranda = c("#eaa32b", "#f45d59", "#c33dd2", "#92214c", "#201274")
 )
 
+#' List Palette
+#' @description This function returns list of all palettes
+#' @param NULL
+#' @usage ListPalette()
+#' @return List of palettes
+#' @export
+#' @examples
+#' ListPalette()
+ListPalette <- function()
+  names(PunjabiPalette)
+
+
 
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
