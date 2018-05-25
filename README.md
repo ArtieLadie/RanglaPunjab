@@ -4,6 +4,17 @@ R code that defines color palettes based on the unique, vibrant culture of [Punj
 
 Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=_MRFMUg4LmQ).
 
+## Creation Platform
+
+OS: Windows 10
+
+R: 3.5.0
+
+RTools35
+
+RStudio: 1.1.453
+
+
 ## Installation
 ```r
 devtools::install_github("ArtieLadie/RanglaPunjab")
