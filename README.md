@@ -4,6 +4,10 @@ R code that defines color palettes based on the unique, vibrant culture of [Punj
 
 Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=_MRFMUg4LmQ).
 
+And if you ever visit India, [Rangla Punjab](https://haveli.co/rangla-punjab/) is a wonderful Punjabi theme village of generations gone by. 
+
+In the meantime, enjoy this R package :-)
+
 ## Creation Platform
 
 OS: Windows 10
