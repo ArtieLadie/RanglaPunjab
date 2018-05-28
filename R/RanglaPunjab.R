@@ -30,10 +30,10 @@ PunjabiPalette <- list (
 #' @examples
 #' ListPalette("PunjabiPalette")
 ListPalette <- function(listname){
-  names(listname)
+  list <- get(listname)
+  names(list)
 }
   
-
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
 #' @param name Palette name
