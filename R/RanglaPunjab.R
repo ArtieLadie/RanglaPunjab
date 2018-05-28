@@ -23,16 +23,16 @@ PunjabiPalette <- list (
 
 #' List Palette
 #' @description This function returns list of all palettes
-#' @param NULL
-#' @usage ListPalette()
+#' @param listname Name of palette vector
+#' @usage ListPalette(listname)
 #' @return List of palettes
 #' @export
 #' @examples
-#' ListPalette()
-ListPalette <- function()
-  names(PunjabiPalette)
-
-
+#' ListPalette("PunjabiPalette")
+ListPalette <- function(listname){
+  names(listname)
+}
+  
 
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
