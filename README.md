@@ -16,9 +16,17 @@ RStudio: 1.1.453
 
 
 ## Installation
+
+From CRAN
+```r
+install.packages("RanglaPunjab")
+```
+
+From GitHub
 ```r
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
+
 # Palettes
 
 ### Amritsari Kulcha
