@@ -38,11 +38,19 @@ devtools::install_github("ArtieLadie/RanglaPunjab")
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
 
+```r
+ShowPalettePhoto("AmritsariKulcha")
+```
+
 ![Amritsari Kulcha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarikulcha.jpg)
 
 ### Chole Bhature
 
 Another mouthwatering dish.
+
+```r
+ShowPalettePhoto("CholeBhature")
+```
 
 ![Chole Bhature](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/cholebhature.jpg)
 
@@ -52,11 +60,19 @@ Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhe
 
 Plus the fields provide beautiful backdrop to [Bollywood films](https://www.news18.com/news/lifestyle/10-bollywood-films-that-will-make-you-love-punjab-even-more-1019780.html).
 
+```r
+ShowPalettePhoto("FieldsOfPunjab")
+```
+
 ![Fields of Punjab](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab.jpg)
 
 ### Fields of Punjab 2
 
 Punjab's fields are so breath-taking, had to add another palette.
+
+```r
+ShowPalettePhoto("FieldsOfPunjab2")
+```
 
 ![Fields of Punjab 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab2.jpg)
 
@@ -64,11 +80,19 @@ Punjab's fields are so breath-taking, had to add another palette.
 
 [Golden Temple](http://www.northsouthtravel.com/10-interesting-facts-about-the-golden-temple) is the oldest place of worship for [Sikhs](https://www.sikhnet.com/pages/who-are-sikhs-what-is-sikhism).
 
+```r
+ShowPalettePhoto("GoldenTemple")
+```
+
 ![Golden Temple](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple.jpg)
 
 ### Golden Temple 2
 
 And because the Golden Temple looks so different at night, had to add another palette.
+
+```r
+ShowPalettePhoto("GoldenTemple2")
+```
 
 ![Golden Temple 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple2.jpg)
 
