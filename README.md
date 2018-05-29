@@ -21,13 +21,14 @@ RStudio: 1.1.453
 
 ## Installation
 
-From CRAN
+To install stable CRAN version
 ```r
 install.packages("RanglaPunjab")
 ```
 
-From GitHub
+To install the latest development version from GitHub
 ```r
+install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
 
