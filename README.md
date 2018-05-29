@@ -100,6 +100,10 @@ ShowPalettePhoto("GoldenTemple2")
 
 Pindh translates to Village. Villages make up the bedrock of Punjab.
 
+```r
+ShowPalettePhoto("Pindh")
+```
+
 ![Pindh](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/pindh.jpg)
 
 ### Sohni Mahiwal
