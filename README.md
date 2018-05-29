@@ -110,11 +110,19 @@ ShowPalettePhoto("Pindh")
 
 [Sohni Mahiwal](https://akhizmunawar.wordpress.com/2016/11/01/the-tragic-love-story-of-sohni-mahiwal/) - one of the many timeless and tragic lovestories of Punjab.
 
-![Sohni Mahiwal](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/sohnimaliwal.jpg)
+```r
+ShowPalettePhoto("SohniMahiwal")
+```
+
+![Sohni Mahiwal](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/sohnimahiwal.jpg)
 
 ### Heer Ranjha
 
 [Heer Ranjha](https://multoghost.wordpress.com/2016/06/06/the-marriage-of-heer-and-ranjha-a-punjabi-love-story/) - one of the many timeless and tragic lovestories of Punjab.
+
+```r
+ShowPalettePhoto("HeerRanjha")
+```
 
 ![Heer Ranjha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/heerranjha.jpg)
 
@@ -122,11 +130,19 @@ ShowPalettePhoto("Pindh")
 
 [Gidha](http://www.utsavpedia.com/cultural-connections/evergreen-folk-dance-from-punjab-giddha/) is a lively, festive dance done by ladies to celebrate and express joy!
 
+```r
+ShowPalettePhoto("Gidha")
+```
+
 ![Gidha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/gidha.jpg)
 
 ### Gidha 2
 
 So many beautiful colors Gidha dancers wear - had to add another palette!
+
+```r
+ShowPalettePhoto("Gidha2")
+```
 
 ![Gidha 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/gidha2.jpg)
 
