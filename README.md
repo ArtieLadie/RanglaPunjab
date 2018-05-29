@@ -152,11 +152,19 @@ ShowPalettePhoto("Gidha2")
 
 In Punjab, this festival is known as Teeyan. Teeyan involves women getting together and performing Gidda, married women visiting their families and receiving gifts. It is also traditional for women to ride on swings.
 
+```r
+ShowPalettePhoto("Teej")
+```
+
 ![Teej](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/teej.jpg)
 
 ### Phulkari
 
 [Phulkari](https://en.wikipedia.org/wiki/Phulkari) is an embroidery technique that means "Flower Work". In olden days women created these colorful shawls for themselves and family, making it a true folk art of Punjab. Now the Government is trying to promote this artform.
+
+```r
+ShowPalettePhoto("Phulkari")
+```
 
 ![Phulkari](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/phulkari.jpg)
 
@@ -166,11 +174,19 @@ Because I love colors so much.
 
 Phulkaris are usually made into [Dupattas](https://simple.wikipedia.org/wiki/Dupatta) to be worn with [Salwar Kameez](http://www.panashindia.com/salwar/punjabi-suits) (Punjabi ladies's suit), as shown in the reference photo.
 
+```r
+ShowPalettePhoto("Phulkari2")
+```
+
 ![Phulkari](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/phulkari2.jpg)
 
 ### Jutti
 
 [Jutti](https://en.wikipedia.org/wiki/Jutti) are shoes. Who can live without shoes?
+
+```r
+ShowPalettePhoto("Jutti")
+```
 
 ![Jutti](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/jutti.jpg)
 
@@ -178,16 +194,28 @@ Phulkaris are usually made into [Dupattas](https://simple.wikipedia.org/wiki/Dup
 
 More colorful, the better!
 
+```r
+ShowPalettePhoto("Jutti2")
+```
+
 ![Jutti 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/jutti2.jpg)
 
 ### Jutti 3
 
 And who cannot love jutti in every conceivable design!
 
+```r
+ShowPalettePhoto("Jutti3")
+```
+
 ![Jutti 3](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/jutti3.jpg)
 
 ### Paranda
 
 With [Paranda](https://www.utsavpedia.com/attires/paranda-or-parandi-from-punjab/), one can never have a bad hair day!
+
+```r
+ShowPalettePhoto("Paranda")
+```
 
 ![Paranda](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/paranda.jpg)
