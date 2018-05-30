@@ -34,7 +34,7 @@ ListPalette <- function(listname){
   if (is.null(names(args))){
     listname <- "PunjabiPalette"
   }
-  else if (!("PunjabiPalette" %in% args)){
+  else if (!(args  %in% "PunjabiPalette")){
     stop(paste0(listname, " does not exist."))
   }
 
