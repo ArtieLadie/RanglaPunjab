@@ -29,13 +29,10 @@ PunjabiPalette <- list (
 #' @export
 #' @examples
 #' ListPalette("PunjabiPalette")
-ListPalette <- function(listname){
+ListPalette <- function(listname="PunjabiPalette"){
 
-  if (is.null(names(args))){
-    listname <- "PunjabiPalette"
-  }
-  else if (!(args  %in% "PunjabiPalette")){
-    stop(paste0(listname, " does not exist."))
+  if (listname != "PunjabiPalette"){
+    stop("Palette list not found.")
   }
 
   list <- get(listname)
@@ -55,7 +52,7 @@ RanglaPunjab <- function(name){
 
   pal <- PunjabiPalette[[name]]
   if (is.null(pal))
-    stop("palette not found.")
+    stop("Palette not found. Run ListPalette() for list of palettes")
   pal
 }
 
@@ -78,21 +75,23 @@ MergePalette <- function(name,name2){
   if ((!is.null(pal)) || (!is.null(pal2)))
     new_pal = unique(c(pal,pal2))
   else
-    stop("palette not found")
+    stop("Palette not found.")
   new_pal
 }
 
 #' Paint Palette
-#' @description This function paints an image of 1 or 2 palettes
+#' @description This function paints an image of up to 3 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd (optional) palette
-#' @usage PaintPalette(name, name2)
+#' @param name3 Name of 3rd (optional) palette
+#' @usage PaintPalette(name, name2, name3)
 #' @return image of colors and description
 #' @export
 #' @examples
 #' PaintPalette("Pindh")
 #' PaintPalette("FieldsOfPunjab","Jutti")
-PaintPalette <- function(name, name2) {
+#' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
+PaintPalette <- function(name, name2, name3) {
 
   x <- RanglaPunjab(name)
   if (!missing(name2)){
@@ -100,6 +99,13 @@ PaintPalette <- function(name, name2) {
     if(name != name2){
       name <- paste(name,"&",name2,sep=" ")
       x = unique(c(x,y))
+    }
+  }
+  if (!missing(name3)){
+    z <- RanglaPunjab(name3)
+    if (name2 != name3){
+      name <- paste(name, name2,"&",name3,sep=" ")
+      x = unique(c(x,y,z))
     }
   }
 
