@@ -30,6 +30,13 @@ PunjabiPalette <- list (
 #' @examples
 #' ListPalette("PunjabiPalette")
 ListPalette <- function(listname){
+
+  if (is.null(names(args))){
+    listname <- "PunjabiPalette"
+  }
+  else if (!identical(listname,"PunjabiPalette")){
+    stop(paste0(listname, " does not exist."))
+  }
   list <- get(listname)
   names(list)
 }
@@ -74,8 +81,6 @@ MergePalette <- function(name,name2){
   new_pal
 }
 
-
-
 #' Paint Palette
 #' @description This function paints an image of 1 or 2 palettes
 #' @param name Name of 1st palette
@@ -105,6 +110,21 @@ PaintPalette <- function(name, name2) {
         ylab = "", xaxt = "n", yaxt = "n", bty = "n")
   graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
+}
+
+
+#' Cherry Pick Palette 
+#' @description This function allows user to cherry pick colors from 2 palettes
+#' @param name Name of 1st palette
+#' @param name2 Name of 2nd palette
+#' @usage CherryPickPalette(name, name2)
+#' @return user-defined palette of colors
+#' @export
+#' @examples
+#' CherryPickPalette("GoldenTemple","Gidha2")
+CherryPickPalette <- function (name, name2){
+  #interactive pop-up that allows users to click on colors they want
+ 
 }
 
 #' Show Palette Photo
