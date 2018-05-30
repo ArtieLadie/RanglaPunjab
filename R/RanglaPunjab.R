@@ -52,7 +52,7 @@ RanglaPunjab <- function(name){
 
   pal <- PunjabiPalette[[name]]
   if (is.null(pal))
-    stop("Palette not found. Run ListPalette() for list of palettes")
+    stop("Palette not found. Run ListPalette() for list of palettes.")
   pal
 }
 
@@ -70,12 +70,14 @@ RanglaPunjab <- function(name){
 MergePalette <- function(name,name2){
 
   pal <-  RanglaPunjab(name)
+  
+  if (is.null(name2)){
+    stop("Enter 2 valid palettes. Run ListPalette() for list of palettes.")
+ }
   pal2 <-  RanglaPunjab(name2)
+  
+  new_pal <-unique(c(pal,pal2))
 
-  if ((!is.null(pal)) || (!is.null(pal2)))
-    new_pal = unique(c(pal,pal2))
-  else
-    stop("Palette not found.")
   new_pal
 }
 
