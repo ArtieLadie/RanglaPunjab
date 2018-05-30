@@ -34,9 +34,10 @@ ListPalette <- function(listname){
   if (is.null(names(args))){
     listname <- "PunjabiPalette"
   }
-  else if (!identical(listname,"PunjabiPalette")){
+  else if (!("PunjabiPalette" %in% args)){
     stop(paste0(listname, " does not exist."))
   }
+
   list <- get(listname)
   names(list)
 }
