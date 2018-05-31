@@ -56,6 +56,42 @@ ShowPalettePhoto("FieldsOfPunjab2")
 
 ![Fields of Punjab 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab2.jpg)
 
+### Golden Temple
+
+[Golden Temple](http://www.northsouthtravel.com/10-interesting-facts-about-the-golden-temple) is the oldest place of worship for [Sikhs](https://www.sikhnet.com/pages/who-are-sikhs-what-is-sikhism).
+
+```r
+ShowPalettePhoto("GoldenTemple")
+```
+
+![Golden Temple](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple.jpg)
+
+### Golden Temple 2
+
+And because the Golden Temple looks so different at night, had to add another palette.
+
+```r
+ShowPalettePhoto("GoldenTemple2")
+```
+
+![Golden Temple 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple2.jpg)
+
+### Pindh
+
+Pindh translates to Village. Villages make up the bedrock of Punjab.
+
+```r
+ShowPalettePhoto("Pindh")
+```
+
+![Pindh](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/pindh.jpg)
+
+### Haveli
+
+Havelis were grand mansions that lined the landscape of a [pre-partitioned Punjab](https://southasiablog.wordpress.com/2014/01/03/religious-map-of-punjab-before-partition/). Many of them have fallen into disrepair. Certainly beautiful reminants of an era gone by.
+
+
+
 ### Amritsari Kulcha
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
@@ -75,17 +111,6 @@ ShowPalettePhoto("CholeBhature")
 ```
 
 ![Chole Bhature](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/cholebhature.jpg)
-
-
-### ChickenTikka
-
-For you non-vegetarians there is delightful Chicken Tikka!
-
-```r
-ShowPalettePhoto("ChickenTikka")
-```
-
-![Chicken Tikka](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/chickentikka.jpg)
 
 ### Biryani Rice
 
@@ -131,36 +156,6 @@ ShowPalettePhoto("Kulfi")
 ```
 
 ![Kulfi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/kulfi.jpg)
-
-### Golden Temple
-
-[Golden Temple](http://www.northsouthtravel.com/10-interesting-facts-about-the-golden-temple) is the oldest place of worship for [Sikhs](https://www.sikhnet.com/pages/who-are-sikhs-what-is-sikhism).
-
-```r
-ShowPalettePhoto("GoldenTemple")
-```
-
-![Golden Temple](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple.jpg)
-
-### Golden Temple 2
-
-And because the Golden Temple looks so different at night, had to add another palette.
-
-```r
-ShowPalettePhoto("GoldenTemple2")
-```
-
-![Golden Temple 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple2.jpg)
-
-### Pindh
-
-Pindh translates to Village. Villages make up the bedrock of Punjab.
-
-```r
-ShowPalettePhoto("Pindh")
-```
-
-![Pindh](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/pindh.jpg)
 
 ### Sohni Mahiwal
 
