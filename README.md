@@ -77,6 +77,18 @@ ShowPalettePhoto("AmritsariLassi")
 ```
 ![Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
 
+### Amritsari Pede Wali Lassi
+
+[Amritsari Pede Wali Lassi](https://www.bigbasket.com/cookbook/recipes/2329/amritsari-pede-wali-lassi/?nc=bt) is a decadant, cooling drink that includes [milk-based pastries](https://www.milkmaid.in/recipes/malai-peda)
+
+Certainly gives Hot Cocao and Marshmallows a run for their money!
+
+```r
+ShowPalettePhoto("AmritsariPedeWaliLassi")
+```
+
+![Amritsari Pede Wali Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsaripedewalilassi.jpg)
+
 ### Chole Bhature
 
 Another mouthwatering dish.
