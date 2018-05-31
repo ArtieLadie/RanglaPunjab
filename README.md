@@ -75,7 +75,7 @@ Or, Lassi can be enjoyed on it's own :-)
 ```r
 ShowPalettePhoto("AmritsariLassi")
 ```
-[Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
+![Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
 
 ### Chole Bhature
 
