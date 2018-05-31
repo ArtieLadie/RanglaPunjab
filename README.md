@@ -66,6 +66,17 @@ ShowPalettePhoto("AmritsariKulcha")
 
 ![Amritsari Kulcha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarikulcha.jpg)
 
+### Amritsari Lassi
+
+[Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yougart-based (almost buttermilk) drink that goes well with Amritsari Kulcha on a Sunday afternoon.
+
+Or, Lassi can be enjoyed on it's own :-)
+
+```r
+ShowPalettePhoto("AmritsariLassi")
+```
+[Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
+
 ### Chole Bhature
 
 Another mouthwatering dish.
