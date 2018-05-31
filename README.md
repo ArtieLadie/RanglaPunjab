@@ -66,29 +66,6 @@ ShowPalettePhoto("AmritsariKulcha")
 
 ![Amritsari Kulcha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarikulcha.jpg)
 
-### Amritsari Lassi
-
-[Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yogurt-based (almost buttermilk) drink that goes well with Amritsari Kulcha on a Sunday afternoon.
-
-Or, Lassi can be enjoyed on it's own :-)
-
-```r
-ShowPalettePhoto("AmritsariLassi")
-```
-![Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
-
-### Amritsari Pede Wali Lassi
-
-[Amritsari Pede Wali Lassi](https://www.bigbasket.com/cookbook/recipes/2329/amritsari-pede-wali-lassi/?nc=bt) is a decadant, cooling drink that includes [milk-based pastries](https://www.milkmaid.in/recipes/malai-peda).
-
-Certainly gives Hot Cocao and Marshmallows a run for their money!
-
-```r
-ShowPalettePhoto("AmritsariPedeWaliLassi")
-```
-
-![Amritsari Pede Wali Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsaripedewalilassi.jpg)
-
 ### Chole Bhature
 
 Another mouthwatering dish.
@@ -118,6 +95,40 @@ ShowPalettePhoto("ChickenTikka")
 ShowPalettePhoto("BiryaniRice")
 ```
 ![Biryani Rice](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/biryanirice.jpg)
+
+
+### Amritsari Lassi
+
+[Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yogurt-based (almost buttermilk) drink that compliments these heavy meals down.
+
+Or, Lassi can be enjoyed on it's own :-)
+
+```r
+ShowPalettePhoto("AmritsariLassi")
+```
+![Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
+
+### Amritsari Pede Wali Lassi
+
+[Amritsari Pede Wali Lassi](https://www.bigbasket.com/cookbook/recipes/2329/amritsari-pede-wali-lassi/?nc=bt) is a decadant, cooling drink that includes [milk-based pastries](https://www.milkmaid.in/recipes/malai-peda).
+
+Certainly gives Hot Cocao and Marshmallows a run for their money!
+
+```r
+ShowPalettePhoto("AmritsariPedeWaliLassi")
+```
+
+![Amritsari Pede Wali Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsaripedewalilassi.jpg)
+
+### Kulfu
+
+[Kulfi](http://www.grubstreet.com/2015/06/babu-ji-traditional-kulfi.html), a savory ice cream (ice cream is an under-statement) dessert. Pistachio-based is most popular, yet it can be any flavor.
+
+```r
+ShowPalettePhoto("Kulfi")
+```
+
+![Kulfi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/kulfi.jpg)
 
 ### Golden Temple
 
