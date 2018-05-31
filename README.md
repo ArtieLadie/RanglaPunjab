@@ -65,6 +65,15 @@ ShowPalettePhoto("ChickenTikka")
 
 ![Chicken Tikka](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/chickentikka.jpg)
 
+### Biryani Rice
+
+[Biryani Rice](https://en.wikipedia.org/wiki/Biryani), the best rice dish in the world, made with the one and only [Basmati rice](https://en.wikipedia.org/wiki/Basmati), originating from (you guessed it), Punjab.
+
+```r
+ShowPalettePhoto("BiryaniRice")
+```
+![Biryani Rice](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/biryanirice.jpg)
+
 ### Fields of Punjab
 
 Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. All are tributaries of the Indus River, the Chenab being the largest. These rivers makes Punjab one of the most fertile regions of India. 
