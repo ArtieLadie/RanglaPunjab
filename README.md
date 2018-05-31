@@ -34,6 +34,28 @@ devtools::install_github("ArtieLadie/RanglaPunjab")
 
 # Palettes
 
+### Fields of Punjab
+
+Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. All are tributaries of the Indus River, the Chenab being the largest. These rivers makes Punjab one of the most fertile regions of India. 
+
+Plus the fields provide beautiful backdrop to [Bollywood films](https://www.news18.com/news/lifestyle/10-bollywood-films-that-will-make-you-love-punjab-even-more-1019780.html).
+
+```r
+ShowPalettePhoto("FieldsOfPunjab")
+```
+
+![Fields of Punjab](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab.jpg)
+
+### Fields of Punjab 2
+
+Punjab's fields are so breath-taking, had to add another palette.
+
+```r
+ShowPalettePhoto("FieldsOfPunjab2")
+```
+
+![Fields of Punjab 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab2.jpg)
+
 ### Amritsari Kulcha
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
@@ -73,28 +95,6 @@ ShowPalettePhoto("ChickenTikka")
 ShowPalettePhoto("BiryaniRice")
 ```
 ![Biryani Rice](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/biryanirice.jpg)
-
-### Fields of Punjab
-
-Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. All are tributaries of the Indus River, the Chenab being the largest. These rivers makes Punjab one of the most fertile regions of India. 
-
-Plus the fields provide beautiful backdrop to [Bollywood films](https://www.news18.com/news/lifestyle/10-bollywood-films-that-will-make-you-love-punjab-even-more-1019780.html).
-
-```r
-ShowPalettePhoto("FieldsOfPunjab")
-```
-
-![Fields of Punjab](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab.jpg)
-
-### Fields of Punjab 2
-
-Punjab's fields are so breath-taking, had to add another palette.
-
-```r
-ShowPalettePhoto("FieldsOfPunjab2")
-```
-
-![Fields of Punjab 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab2.jpg)
 
 ### Golden Temple
 
