@@ -4,6 +4,7 @@ PunjabiPalette <- list (
   FieldsOfPunjab = c("#fda726", "#d75b07", "#702e06", "#514617", "#313407"),
   FieldsOfPunjab2 = c("#9aa5b4", "#516e9c", "#13306a", "#94aa0b", "#a36316"),
   AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
+  AmritsariLassi = c("#d7dacc","#efedd0","#a68b4f","#d5dfeb","#6e675c"),
   CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
   ChickenTikka = c("#faad49","#94a00b","#d6350c","#be1f48","#631c0b"),
   BiryaniRice = c("#efc04d","#d94520","#527934","2d1409","#084365"),
