@@ -90,6 +90,9 @@ ShowPalettePhoto("Pindh")
 
 Havelis were grand mansions that lined the landscape of a [pre-partitioned Punjab](https://southasiablog.wordpress.com/2014/01/03/religious-map-of-punjab-before-partition/). Many of them have fallen into disrepair. Certainly beautiful reminants of an era gone by.
 
+### Haveli 2
+
+Havelis always have a [courtyard](https://en.wikipedia.org/wiki/Haveli) .
 
 
 ### Amritsari Kulcha
