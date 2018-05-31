@@ -36,7 +36,13 @@ devtools::install_github("ArtieLadie/RanglaPunjab")
 
 ### Fields of Punjab
 
-Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. All are tributaries of the Indus River, the Chenab being the largest. These rivers makes Punjab one of the most fertile regions of India. 
+Punjab translates to "Land of Five Rivers". 
+
+These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. 
+
+All are tributaries of the Indus River, the Chenab being the largest. 
+
+The five rivers makes Punjab one of the most fertile regions of India. 
 
 Plus the fields provide beautiful backdrop to [Bollywood films](https://www.news18.com/news/lifestyle/10-bollywood-films-that-will-make-you-love-punjab-even-more-1019780.html).
 
