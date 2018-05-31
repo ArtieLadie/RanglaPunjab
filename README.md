@@ -92,9 +92,22 @@ Havelis were grand mansions that bustled with life generations ago.
 
 Many havelis have fallen into disrepair, yet they remain beautiful reminants of an era gone by.
 
+```r
+ShowPalettePhoto("Haveli")
+```
+
+![Haveli](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/haveli.jpg)
+
 ### Haveli 2
 
-Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli) .
+Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli).
+
+```r
+ShowPalettePhoto("Haveli2")
+```
+
+![Haveli2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/haveli2.jpg)
+
 
 
 ### Amritsari Kulcha
