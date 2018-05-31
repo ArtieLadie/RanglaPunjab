@@ -120,7 +120,7 @@ ShowPalettePhoto("AmritsariPedeWaliLassi")
 
 ![Amritsari Pede Wali Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsaripedewalilassi.jpg)
 
-### Kulfu
+### Kulfi
 
 [Kulfi](http://www.grubstreet.com/2015/06/babu-ji-traditional-kulfi.html), a savory ice cream (ice cream is an under-statement) dessert. Pistachio-based is most popular, yet it can be any flavor.
 
