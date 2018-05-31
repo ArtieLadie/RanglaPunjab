@@ -114,8 +114,6 @@ ShowPalettePhoto("Haveli2")
 
 ![Haveli2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/haveli2.jpg)
 
-
-
 ### Amritsari Kulcha
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
