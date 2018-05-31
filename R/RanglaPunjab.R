@@ -59,24 +59,34 @@ RanglaPunjab <- function(name){
 
 
 #' Merge Palette
-#' @description This function returns a palette of 10 colors (in the unlikely event there are duplicates, then return less than 10)
+#' @description This function takes 2 or 3 palettes and returns a palette of 10 or 15 colors 
+#'              (in the unlikely event there are duplicates, then return less than 10 or 15)
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
-#' @usage MergePalette(name, name2)
-#' @return Vector of 10 color values (in the unlikely event there are duplicates, then return less than 10)
+#' @param name3 Name of 3nd (optional) palette
+#' @usage MergePalette(name, name2, name3)
+#' @return Vector of 10 or 15 color values (in the unlikely event there are duplicates, 
+#'         then return less than 10 or 15 colors)
 #' @export
 #' @examples
 #' MergePalette("Gidha", "Teej")
-MergePalette <- function(name,name2){
-
-  pal <-  RanglaPunjab(name)
+#' MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
+MergePalette <- function(name,name2,name3){
   
-  if (is.null(name2)){
-    stop("Enter 2 valid palettes. Run ListPalette() for list of palettes.")
- }
+  new_pal <- NULL
+  
+  if ((missing(name)) || (missing(name2))){
+    stop("Enter 2 or 3 valid palettes. Run ListPalette() for list of palettes.")
+  }
+  if (!missing(name3)){
+    pal3 <-  RanglaPunjab(name3)
+    new_pal <- c(pal3)
+  }
+  
+  pal <-  RanglaPunjab(name)
   pal2 <-  RanglaPunjab(name2)
   
-  new_pal <-unique(c(pal,pal2))
+  new_pal <-unique(c(pal,pal2,new_pal))
 
   new_pal
 }
