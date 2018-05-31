@@ -68,7 +68,7 @@ ShowPalettePhoto("AmritsariKulcha")
 
 ### Amritsari Lassi
 
-[Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yougart-based (almost buttermilk) drink that goes well with Amritsari Kulcha on a Sunday afternoon.
+[Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yogurt-based (almost buttermilk) drink that goes well with Amritsari Kulcha on a Sunday afternoon.
 
 Or, Lassi can be enjoyed on it's own :-)
 
