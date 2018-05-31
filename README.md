@@ -88,11 +88,13 @@ ShowPalettePhoto("Pindh")
 
 ### Haveli
 
-Havelis were grand mansions that lined the landscape of Punjab generations ago. Many of them have fallen into disrepair. Certainly beautiful reminants of an era gone by.
+Havelis were grand mansions that bustled with life generations ago. 
+
+Many havelis have fallen into disrepair, yet they remain beautiful reminants of an era gone by.
 
 ### Haveli 2
 
-Havelis always have a [courtyard](https://en.wikipedia.org/wiki/Haveli) .
+Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli) .
 
 
 ### Amritsari Kulcha
