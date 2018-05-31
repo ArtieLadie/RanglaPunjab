@@ -3,14 +3,17 @@
 PunjabiPalette <- list (
   FieldsOfPunjab = c("#fda726", "#d75b07", "#702e06", "#514617", "#313407"),
   FieldsOfPunjab2 = c("#9aa5b4", "#516e9c", "#13306a", "#94aa0b", "#a36316"),
-  AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
-  AmritsariLassi = c("#d7dacc","#efedd0","#a68b4f","#d5dfeb","#6e675c"),
-  CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
-  ChickenTikka = c("#faad49","#94a00b","#d6350c","#be1f48","#631c0b"),
-  BiryaniRice = c("#efc04d","#d94520","#527934","2d1409","#084365"),
   GoldenTemple = c("#bdcad0", "#5f8abf", "#ffd860", "#d88821", "#672006"),
   GoldenTemple2 = c("#7d84cb", "#374890","#c2592e", "#fa5102", "#722416"),
   Pindh = c("#5eb39c", "#1f6562","#2168c2", "#d77e5f", "#5f3e25"),
+  Haveli = c("#e5e0da","#6f635c", "#e2c0a3","#b96a60","#903829"),
+  Haveli2 = c("#fbfbf6","#b7947a", "#7786e5", "#63805a","#8f514c"),
+  AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
+  CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
+  BiryaniRice = c("#efc04d","#d94520","#527934","2d1409","#084365"),
+  AmritsariLassi = c("#d7dacc","#efedd0","#a68b4f","#d5dfeb","#6e675c"),
+  AmritsariPedeWaliLassi = c("#f2f3e7","#c6b49c","#f9e060","#837e53","#503316"),
+  Kulfi = c("#f0ecb0","#a96337", "#4a4000", "#4a121b", "#001a24"),
   SohniMahiwal = c("#dc6478", "#a9365a", "#f4420e", "#403c61", "#313f42"),
   HeerRanjha = c("#93dd7d","#3272b6", "#ec9382", "#ab3a40", "#072246"),
   Gidha = c("#fdea6e", "#4aec6a", "#fb7894", "#f13111", "#2584a0"),
@@ -28,10 +31,12 @@ PunjabiPalette <- list (
 #' @description This function returns list of all palettes
 #' @usage ListPalette()
 #' @return List of palettes
-#' "AmritsariKulcha" "CholeBhature"    "FieldsOfPunjab"  "FieldsOfPunjab2" "GoldenTemple"   
-#' "GoldenTemple2"   "Pindh"           "SohniMahiwal"    "HeerRanjha"      "Gidha"          
-#' "Gidha2"          "Teej"            "Phulkari"        "Phulkari2"       "Jutti"          
-#' "Jutti2"          "Jutti3"          "Paranda" 
+#  "FieldsOfPunjab"         "FieldsOfPunjab2"        "GoldenTemple"           "GoldenTemple2"         
+#  "Pindh"                  "Haveli"                 "Haveli2"                "AmritsariKulcha"       
+#  "CholeBhature"           "BiryaniRice"            "AmritsariLassi"         "AmritsariPedeWaliLassi"
+#  "Kulfi"                  "SohniMahiwal"           "HeerRanjha"             "Gidha"                 
+#  "Gidha2"                 "Teej"                   "Phulkari"               "Phulkari2"             
+#  "Jutti"                  "Jutti2"                 "Jutti3"                 "Paranda" 
 #' @export
 #' @examples
 #' ListPalette()
