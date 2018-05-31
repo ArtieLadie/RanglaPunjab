@@ -79,7 +79,7 @@ ShowPalettePhoto("AmritsariLassi")
 
 ### Amritsari Pede Wali Lassi
 
-[Amritsari Pede Wali Lassi](https://www.bigbasket.com/cookbook/recipes/2329/amritsari-pede-wali-lassi/?nc=bt) is a decadant, cooling drink that includes [milk-based pastries](https://www.milkmaid.in/recipes/malai-peda)
+[Amritsari Pede Wali Lassi](https://www.bigbasket.com/cookbook/recipes/2329/amritsari-pede-wali-lassi/?nc=bt) is a decadant, cooling drink that includes [milk-based pastries](https://www.milkmaid.in/recipes/malai-peda).
 
 Certainly gives Hot Cocao and Marshmallows a run for their money!
 
