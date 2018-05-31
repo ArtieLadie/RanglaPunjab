@@ -54,6 +54,17 @@ ShowPalettePhoto("CholeBhature")
 
 ![Chole Bhature](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/cholebhature.jpg)
 
+
+### ChickenTikka
+
+For you non-vegetarians there is delightful Chicken Tikka!
+
+```r
+ShowPalettePhoto("ChickenTikka")
+```
+
+![Chicken Tikka](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/chickentikka.jpg)
+
 ### Fields of Punjab
 
 Punjab translates to "Land of Five Rivers". These rivers refer to the rivers Jhelum, Chenab, Ravi, Sutlej, and Beas. All are tributaries of the Indus River, the Chenab being the largest. These rivers makes Punjab one of the most fertile regions of India. 
