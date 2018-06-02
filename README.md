@@ -106,7 +106,7 @@ ShowPalettePhoto("Haveli")
 
 ### Haveli 2
 
-Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli).
+Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli). Usually light, airy, with meticulously decorated structures.
 
 ```r
 ShowPalettePhoto("Haveli2")
