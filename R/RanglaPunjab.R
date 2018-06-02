@@ -6,8 +6,8 @@ PunjabiPalette <- list (
   GoldenTemple = c("#bdcad0", "#5f8abf", "#ffd860", "#d88821", "#672006"),
   GoldenTemple2 = c("#7d84cb", "#374890","#c2592e", "#fa5102", "#722416"),
   Pindh = c("#5eb39c", "#1f6562","#2168c2", "#d77e5f", "#5f3e25"),
-  Haveli = c("#e5e0da","#6f635c", "#e2c0a3","#b96a60","#903829"),
-  Haveli2 = c("#fbfbf6","#b7947a", "#7786e5", "#63805a","#8f514c"),
+  Haveli = c("#f4e5d8","#f0b49b","#bb5a40", "#653219", "#19110b"),
+  Haveli2 = c("#ecece9", "#81826c", "#5d5f64", "#69332e", "#5c4e48"),
   AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
   CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
   BiryaniRice = c("#efc04d","#d94520","#527934","2d1409","#084365"),
@@ -55,17 +55,19 @@ ListPalette <- function(){
 #' RanglaPunjab("CholeBhature")
 #' RanglaPunjab("SohniMahiwal")
 #' RanglaPunjab("Teej")
-RanglaPunjab <- function(name){
+RanglaPunjab <- function(name=NULL){
 
   pal <- NULL
   
-  if (nargs() == 0){
+  if (nargs() != 1){
     stop("Enter 1 valid palettes. Run ListPalette() for list of palettes.")
   }
   
-  pal <- PunjabiPalette[[name]]
-  if (is.null(pal))
+  if (!(name %in% names(PunjabiPalette))){
     stop("Palette not found. Run ListPalette() for list of palettes.")
+  }
+  
+  pal <- PunjabiPalette[[name]]
   pal
 }
 
@@ -84,14 +86,14 @@ RanglaPunjab <- function(name){
 #' MergePalette("AmritsariKulcha", "Phulkari2")
 #' MergePalette("Gidha", "Jutti2")
 #' MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
-MergePalette <- function(name,name2,name3){
+MergePalette <- function(name,name2=NULL,name3=NULL){
   
   pal <- NULL
   pal2 <- NULL
   new_pal <- NULL
-  args <- mget(names(formals()))
+  args <- unlist(mget(names(formals())))
   
-  if (nargs() < 2){
+  if ((nargs() < 2) || (nargs() > 3)){
     stop("Enter 2 or 3 valid palettes. Run ListPalette() for list of palettes.")
   }
   
@@ -106,9 +108,7 @@ MergePalette <- function(name,name2,name3){
   
   pal <-  RanglaPunjab(name)
   pal2 <-  RanglaPunjab(name2)
-  
   new_pal <-unique(c(pal,pal2,new_pal))
-
   new_pal
 }
 
@@ -124,10 +124,10 @@ MergePalette <- function(name,name2,name3){
 #' PaintPalette("Pindh")
 #' PaintPalette("FieldsOfPunjab","Jutti")
 #' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
-PaintPalette <- function(name, name2, name3) {
+PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
   
   new_name <- NULL
-  args <- mget(names(formals()))
+  args <- unlist(mget(names(formals())))
   
   if (nargs() == 0){
     stop("Enter 1 to 3 valid palettes. Run ListPalette() for list of palettes.")
@@ -160,29 +160,58 @@ PaintPalette <- function(name, name2, name3) {
     new_name <- name
   }
 
+  RenderPalette(x,new_name)
+  
+  #n <- length(x)
+  #old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
+  #on.exit(graphics::par(old))
+
+  #graphics::image(1:n, 1, as.matrix(1:n), col = x,
+  #      ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+  #graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
+  #graphics::text((n + 1) / 2, 1, labels = new_name, cex = 2, family = "serif")
+}
+
+# Internal, hidden function
+# Called by PaintPalette() and CherryPickPalette()
+RenderPalette <- function(x,name){
   n <- length(x)
   old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
   on.exit(graphics::par(old))
-
+  
   graphics::image(1:n, 1, as.matrix(1:n), col = x,
-        ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+                  ylab = "", xaxt = "n", yaxt = "n", bty = "n")
   graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
-  graphics::text((n + 1) / 2, 1, labels = new_name, cex = 2, family = "serif")
+  graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
-
 #' Cherry Pick Palette 
-#' @description This function allows user to cherry pick colors from 2 palettes
+#' @description This function allows user to cherry pick colors from 3 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
-#' @usage CherryPickPalette(name, name2)
+#' @param name3 Name of 3nd (optional) palette
+#' @param name4 Name of 4th (optional) palette
+#' @param name5 Name of 5th (optional) palette
+#' @usage CherryPickPalette(name, name2, name3, name4, name5)
 #' @return user-defined palette of colors
 #' @export
 #' @examples
-#' CherryPickPalette("GoldenTemple","Gidha2")
-CherryPickPalette <- function (name, name2){
-  #interactive pop-up that allows users to click on colors they want
- 
+#' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
+#' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
+#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli", "Phulkari2")
+#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3", "Phulkari","GoldenTemple")
+CherryPickPalette <- function (name, name2=NULL, name3=NULL, name4=NULL, name5=NULL){
+  
+  new_name <- NULL
+  args <- unlist(mget(names(formals())))
+  
+  if (nargs() < 2){
+    stop("Enter 2 to 5 valid palettes. Run ListPalette() for list of palettes.")
+  }
+  
+  if (anyDuplicated(args)){
+    stop("Enter unique palettes only. Run ListPalette() for list of palettes.")
+  }
 }
 
 #' Show Palette Photo
@@ -194,11 +223,10 @@ CherryPickPalette <- function (name, name2){
 #' @export
 #' @examples
 #' ShowPalettePhoto("GoldenTemple")
-ShowPalettePhoto <- function(name){
-
+#' ShowPalettePhoto("Kulfi")
+#' ShowPalettePhoto("AmritsariPedeWaliLassi")
+ShowPalettePhoto <- function(name=NULL){
   pal <- RanglaPunjab(name)
-  if (is.null(pal))
-    stop("palette not found.")
   x <- tolower(name)
   sysloc <- system.file(package="RanglaPunjab")
   x <- paste (sysloc,"/img/",x,".jpg", sep="")
