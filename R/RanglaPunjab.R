@@ -57,6 +57,12 @@ ListPalette <- function(){
 #' RanglaPunjab("Teej")
 RanglaPunjab <- function(name){
 
+  pal <- NULL
+  
+  if (nargs() == 0){
+    stop("Enter 1 valid palettes. Run ListPalette() for list of palettes.")
+  }
+  
   pal <- PunjabiPalette[[name]]
   if (is.null(pal))
     stop("Palette not found. Run ListPalette() for list of palettes.")
@@ -80,11 +86,19 @@ RanglaPunjab <- function(name){
 #' MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
 MergePalette <- function(name,name2,name3){
   
+  pal <- NULL
+  pal2 <- NULL
   new_pal <- NULL
+  args <- mget(names(formals()))
   
-  if ((missing(name)) || (missing(name2))){
+  if (nargs() < 2){
     stop("Enter 2 or 3 valid palettes. Run ListPalette() for list of palettes.")
   }
+  
+  if (anyDuplicated(args)){
+    stop("Enter unique palettes only. Run ListPalette() for list of palettes.")
+  }
+  
   if (!missing(name3)){
     pal3 <-  RanglaPunjab(name3)
     new_pal <- c(pal3)
@@ -111,21 +125,39 @@ MergePalette <- function(name,name2,name3){
 #' PaintPalette("FieldsOfPunjab","Jutti")
 #' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
 PaintPalette <- function(name, name2, name3) {
+  
+  new_name <- NULL
+  args <- mget(names(formals()))
+  
+  if (nargs() == 0){
+    stop("Enter 1 to 3 valid palettes. Run ListPalette() for list of palettes.")
+  }
 
+  if ((nargs() > 1) && (anyDuplicated(args))){
+    stop("Enter unique palettes only. Run ListPalette() for list of palettes.")
+  }
+  
+  
   x <- RanglaPunjab(name)
   if (!missing(name2)){
     y <- RanglaPunjab(name2)
-    if(name != name2){
-      name <- paste(name,"&",name2,sep=" ")
-      x = unique(c(x,y))
-    }
+    new_name <- c(name,name2)
+    x = unique(c(x,y))
   }
   if (!missing(name3)){
     z <- RanglaPunjab(name3)
-    if (name2 != name3){
-      name <- paste(name, name2,"&",name3,sep=" ")
-      x = unique(c(x,y,z))
-    }
+    new_name <- c(new_name,name3)
+    x = unique(c(x,y,z))
+  }
+  
+  if (length(new_name) == 3) {
+    new_name <- paste(name,",",name2,"&",name3,sep=" ")
+  }
+  else if (length(new_name) == 2){
+    new_name <- paste(name,"&",name2,sep=" ")
+  }
+  else{
+    new_name <- name
   }
 
   n <- length(x)
@@ -135,7 +167,7 @@ PaintPalette <- function(name, name2, name3) {
   graphics::image(1:n, 1, as.matrix(1:n), col = x,
         ylab = "", xaxt = "n", yaxt = "n", bty = "n")
   graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
-  graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
+  graphics::text((n + 1) / 2, 1, labels = new_name, cex = 2, family = "serif")
 }
 
 
