@@ -95,8 +95,8 @@ Input 1 to 5 palettes to visually select colors to create new palette
 #' @examples
 #' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
 #' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
-#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli", "Phulkari2")
-#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3", "Phulkari","GoldenTemple")
+#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli","Phulkari2")
+#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3","Phulkari","GoldenTemple")
 ```
 
 # Palettes
