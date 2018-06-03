@@ -270,7 +270,7 @@ ShowPalettePhoto("HeerRanjha")
 
 [Gidha](http://www.utsavpedia.com/cultural-connections/evergreen-folk-dance-from-punjab-giddha/) is a lively, festive dance done by ladies to celebrate and express joy!
 
-[This video](https://www.youtube.com/watch?v=yBgRfPUvsRE) is an interesting rendition of Gidha!
+[This video](https://www.youtube.com/watch?v=yBgRfPUvsRE) is a lovely Gidha performance.
 
 ```r
 ShowPalettePhoto("Gidha")
@@ -294,7 +294,7 @@ ShowPalettePhoto("Gidha2")
 
 In Punjab, this festival is known as Teeyan. Teeyan involves women getting together and performing Gidda, married women visiting their families and receiving gifts. It is also traditional for women to ride on swings.
 
-[This video](https://www.youtube.com/watch?v=W98G7oHytCE) depicts lively song and dance for Teej
+[This video](https://www.youtube.com/watch?v=W98G7oHytCE) depicts lively song and dance for Teej.
 
 ```r
 ShowPalettePhoto("Teej")
