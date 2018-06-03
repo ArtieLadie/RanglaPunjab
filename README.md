@@ -2,7 +2,7 @@
 
 R code that defines color palettes based on the unique, vibrant culture of [Punjab, India](https://wikitravel.org/en/Punjab_(India)). 
 
-Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=_MRFMUg4LmQ).
+Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=ZNeWH82nFyg).
 
 And if you ever visit India, [Rangla Punjab](https://haveli.co/rangla-punjab/) is a wonderful Punjabi theme village of generations gone by. 
 
