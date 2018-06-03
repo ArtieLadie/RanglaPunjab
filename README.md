@@ -32,6 +32,28 @@ install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
 
+## Functions
+
+### ListPalette()
+
+Lists all 24 palettes
+
+### MergePalette(name, name2, name3)
+
+Input 2 to 3 palettes to merge into new palette
+
+### PaintPalette(name, name2, name3)
+
+Input 1 to 3 palettes to display thier colors on screen
+
+### ShowPalettePhoto(name)
+
+Input 1 palette to display that photo that inspired these colors
+
+### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
+
+Input 1 to 5 palettes to visually select colors to create new palette
+
 # Palettes
 
 ### Fields of Punjab
