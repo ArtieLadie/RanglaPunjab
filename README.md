@@ -270,6 +270,8 @@ ShowPalettePhoto("HeerRanjha")
 
 [Gidha](http://www.utsavpedia.com/cultural-connections/evergreen-folk-dance-from-punjab-giddha/) is a lively, festive dance done by ladies to celebrate and express joy!
 
+[Here](https://www.youtube.com/watch?v=a4k7Alj_pjk) is Gidha in action!
+
 ```r
 ShowPalettePhoto("Gidha")
 ```
