@@ -38,21 +38,66 @@ devtools::install_github("ArtieLadie/RanglaPunjab")
 
 Lists all 24 palettes
 
+```r
+#' @examples
+#' ListPalette()
+```
+
+### RanglaPunjab(name)
+
+Input 1 palette, return vector of colors
+
+```r
+#' @examples
+#' RanglaPunjab("CholeBhature")
+#' RanglaPunjab("SohniMahiwal")
+#' RanglaPunjab("Teej")
+```
+
 ### MergePalette(name, name2, name3)
 
 Input 2 to 3 palettes to merge into new palette
 
+```r
+#' @examples
+#' MergePalette("AmritsariKulcha", "Phulkari2")
+#' MergePalette("Gidha", "Jutti2")
+#' MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
+```
+
 ### PaintPalette(name, name2, name3)
 
-Input 1 to 3 palettes to display thier colors on screen
+Input 1 to 3 palettes to display their colors on screen
+
+```r
+#' @examples
+#' PaintPalette("Pindh")
+#' PaintPalette("FieldsOfPunjab","Jutti")
+#' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
+```
 
 ### ShowPalettePhoto(name)
 
 Input 1 palette to display that photo that inspired these colors
 
+```r
+#' @examples
+#' ShowPalettePhoto("GoldenTemple")
+#' ShowPalettePhoto("Kulfi")
+#' ShowPalettePhoto("AmritsariPedeWaliLassi")
+```
+
 ### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
 
 Input 1 to 5 palettes to visually select colors to create new palette
+
+```r
+#' @examples
+#' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
+#' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
+#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli", "Phulkari2")
+#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3", "Phulkari","GoldenTemple")
+```
 
 # Palettes
 
