@@ -26,7 +26,7 @@ To install stable CRAN version
 install.packages("RanglaPunjab")
 ```
 
-To install the latest development version from GitHub (recommended)
+To install the latest development version from GitHub (highly recommended)
 ```r
 install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
