@@ -185,6 +185,27 @@ RenderPalette <- function(x,name){
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
+#' Show Palette Photo
+#' @description This function shows photo that inspired a palette
+#' @param name palette name
+#' @usage ShowPalettePhoto(name)
+#' @return image of reference photo with palette
+#' @import jpeg
+#' @export
+#' @examples
+#' ShowPalettePhoto("GoldenTemple")
+#' ShowPalettePhoto("Kulfi")
+#' ShowPalettePhoto("AmritsariPedeWaliLassi")
+ShowPalettePhoto <- function(name=NULL){
+  pal <- RanglaPunjab(name)
+  x <- tolower(name)
+  sysloc <- system.file(package="RanglaPunjab")
+  x <- paste (sysloc,"/img/",x,".jpg", sep="")
+  jj <- readJPEG(x,native=TRUE)
+  graphics::plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
+  graphics::rasterImage(jj,0,0,1,1)
+}
+
 #' Cherry Pick Palette 
 #' @description This function allows user to cherry pick colors from 3 palettes
 #' @param name Name of 1st palette
@@ -214,23 +235,3 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL, name4=NULL, name5=N
   }
 }
 
-#' Show Palette Photo
-#' @description This function shows photo that inspired a palette
-#' @param name palette name
-#' @usage ShowPalettePhoto(name)
-#' @return image of reference photo with palette
-#' @import jpeg
-#' @export
-#' @examples
-#' ShowPalettePhoto("GoldenTemple")
-#' ShowPalettePhoto("Kulfi")
-#' ShowPalettePhoto("AmritsariPedeWaliLassi")
-ShowPalettePhoto <- function(name=NULL){
-  pal <- RanglaPunjab(name)
-  x <- tolower(name)
-  sysloc <- system.file(package="RanglaPunjab")
-  x <- paste (sysloc,"/img/",x,".jpg", sep="")
-  jj <- readJPEG(x,native=TRUE)
-  graphics::plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
-  graphics::rasterImage(jj,0,0,1,1)
-}
