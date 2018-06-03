@@ -89,7 +89,7 @@ Input 1 palette to display that photo that inspired these colors
 
 ### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
 
-Input 1 to 5 palettes to visually select colors to create new palette
+Input 2 to 5 palettes to visually select colors to create new palette
 
 ```r
 #' @examples
