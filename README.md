@@ -10,13 +10,13 @@ In the meantime, enjoy this R package :-)
 
 ## Creation Platform
 
-OS: Windows 10
+**OS:** Windows 10
 
-R: 3.5.0
+**R:** 3.5.0
 
-RTools35
+**RTools35**
 
-RStudio: 1.1.453
+**RStudio:** 1.1.453
 
 
 ## Installation
