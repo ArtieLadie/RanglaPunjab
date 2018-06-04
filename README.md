@@ -31,65 +31,7 @@ To install the latest development version from GitHub (highly recommended)
 install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
-
-## Functions
-
-### ListPalette()
-
-Lists all 24 palettes
-
-```r
-> ListPalette()
- [1] "FieldsOfPunjab"       "FieldsOfPunjab2"        "GoldenTemple"           "GoldenTemple2"         
- [5] "Pindh"                "Haveli"                 "Haveli2"                "AmritsariKulcha"       
- [9] "CholeBhature"         "BiryaniRice"            "AmritsariLassi"         "AmritsariPedeWaliLassi"
-[13] "Kulfi"                "SohniMahiwal"           "HeerRanjha"             "Gidha"                 
-[17] "Gidha2"               "Teej"                   "Phulkari"               "Phulkari2"             
-[21] "Jutti"                "Jutti2"                 "Jutti3"                 "Paranda" 
-```
-
-### RanglaPunjab(name)
-
-Input 1 palette, return vector of colors
-
-```r
-> RanglaPunjab("GoldenTemple")
-[1] "#bdcad0" "#5f8abf" "#ffd860" "#d88821" "#672006"
-```
-
-### MergePalette(name, name2, name3)
-
-Input 2 to 3 palettes to merge into new palette
-
-```r
-MergePalette("AmritsariKulcha", "Phulkari2")
-[1] "#e3e4d9" "#ebdc9c" "#b3340e" "#67140a" "#2a231d" "#9c1a41" "#42a4e8" "#3a35da" "#ee523c" "#3e167c"
-```
-
-### PaintPalette(name, name2, name3)
-
-Input 1 to 3 palettes to display their colors on screen
-
-```r
-> PaintPalette("FieldsOfPunjab","Jutti","Paranda")
-```
-![Paint Palette](https://github.com/ArtieLadie/RanglaPunjab/blob/master/vignettes/paintpalette.jpg)
-
-### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
-
-Input 2 to 5 palettes to visually select colors to create new palette
-
-### ShowPalettePhoto(name)
-
-Input 1 palette to display that photo that inspired these colors
-
-```r
-> ShowPalettePhoto("Jutti3")
-```
-
-![Jutti 3](https://github.com/ArtieLadie/RanglaPunjab/blob/master/vignettes/jutti3.jpg)
-
-# ~~~ Palettes ~~~
+# Palettes
 
 ### Fields of Punjab
 
