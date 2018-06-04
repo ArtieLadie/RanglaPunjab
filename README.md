@@ -79,24 +79,15 @@ Input 1 to 3 palettes to display their colors on screen
 
 Input 2 to 5 palettes to visually select colors to create new palette
 
-```r
-#' @examples
-#' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
-#' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
-#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli","Phulkari2")
-#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3","Phulkari","GoldenTemple")
-```
-
 ### ShowPalettePhoto(name)
 
 Input 1 palette to display that photo that inspired these colors
 
 ```r
-#' @examples
-#' ShowPalettePhoto("GoldenTemple")
-#' ShowPalettePhoto("Kulfi")
-#' ShowPalettePhoto("AmritsariPedeWaliLassi")
+> ShowPalettePhoto("Jutti3")
 ```
+
+![Jutti 3](https://github.com/ArtieLadie/RanglaPunjab/blob/master/vignettes/jutti3.jpg)
 
 # Palettes
 
