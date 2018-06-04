@@ -8,17 +8,6 @@ And if you ever visit India, [Rangla Punjab](https://haveli.co/rangla-punjab/) i
 
 In the meantime, enjoy this R package :-)
 
-## Creation Platform
-
-**OS:** Windows 10
-
-**R:** 3.5.0
-
-**RTools35**
-
-**RStudio:** 1.1.453
-
-
 ## Installation
 
 To install stable CRAN version
