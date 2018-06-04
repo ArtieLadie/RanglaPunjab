@@ -1,6 +1,6 @@
 # RanglaPunjab
 
-R code that defines color palettes based on the unique, vibrant culture of Punjab, India]. 
+R code that defines color palettes based on the unique, vibrant culture of Punjab, India. 
 
 Rangla Punjab translates to "Colorful Punjab".
 
