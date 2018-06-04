@@ -73,7 +73,7 @@ Input 1 to 3 palettes to display their colors on screen
 ```r
 > PaintPalette("FieldsOfPunjab","Jutti","Paranda")
 ```
-
+![Paint Palette](https://github.com/ArtieLadie/RanglaPunjab/blob/master/vignettes/paintpalette.jpg)
 
 ### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
 
