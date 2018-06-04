@@ -1,8 +1,8 @@
 # RanglaPunjab
 
-R code that defines color palettes based on the unique, vibrant culture of [Punjab, India](https://wikitravel.org/en/Punjab_(India)). 
+R code that defines color palettes based on the unique, vibrant culture of Punjab, India]. 
 
-Rangla Punjab translates to ["Colorful Punjab"](https://www.youtube.com/watch?v=a4k7Alj_pjk).
+Rangla Punjab translates to "Colorful Punjab".
 
 And if you ever visit India, [Rangla Punjab](https://haveli.co/rangla-punjab/) is a wonderful Punjabi theme village of generations gone by. 
 
@@ -270,7 +270,7 @@ ShowPalettePhoto("HeerRanjha")
 
 [Gidha](http://www.utsavpedia.com/cultural-connections/evergreen-folk-dance-from-punjab-giddha/) is a lively, festive dance done by ladies to celebrate and express joy!
 
-[This video](https://www.youtube.com/watch?v=yBgRfPUvsRE) is a lovely Gidha performance.
+[This video](https://www.youtube.com/watch?v=W98G7oHytCE) is a lovely Gidha performance.
 
 ```r
 ShowPalettePhoto("Gidha")
@@ -293,8 +293,6 @@ ShowPalettePhoto("Gidha2")
 [Teej](https://en.wikipedia.org/wiki/Teeyan) is generic name for festivals celebrated across India by girls and women. 
 
 In Punjab, this festival is known as Teeyan. Teeyan involves women getting together and performing Gidda, married women visiting their families and receiving gifts. It is also traditional for women to ride on swings.
-
-[This video](https://www.youtube.com/watch?v=W98G7oHytCE) depicts lively song and dance for Teej.
 
 ```r
 ShowPalettePhoto("Teej")
