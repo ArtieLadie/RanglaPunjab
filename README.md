@@ -49,7 +49,7 @@ Input 1 palette, return vector of colors
 
 ```r
 #' @examples
-#' RanglaPunjab("CholeBhature")
+#' RanglaPunjab("GoldenTemple")
 #' RanglaPunjab("SohniMahiwal")
 #' RanglaPunjab("Teej")
 ```
