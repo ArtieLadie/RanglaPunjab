@@ -76,17 +76,6 @@ Input 1 to 3 palettes to display their colors on screen
 #' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
 ```
 
-### ShowPalettePhoto(name)
-
-Input 1 palette to display that photo that inspired these colors
-
-```r
-#' @examples
-#' ShowPalettePhoto("GoldenTemple")
-#' ShowPalettePhoto("Kulfi")
-#' ShowPalettePhoto("AmritsariPedeWaliLassi")
-```
-
 ### CherryPickPalette(name, name2, name3, name4, name5) <-- UNDER CONSTRUCTION
 
 Input 2 to 5 palettes to visually select colors to create new palette
@@ -97,6 +86,17 @@ Input 2 to 5 palettes to visually select colors to create new palette
 #' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
 #' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli","Phulkari2")
 #' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3","Phulkari","GoldenTemple")
+```
+
+### ShowPalettePhoto(name)
+
+Input 1 palette to display that photo that inspired these colors
+
+```r
+#' @examples
+#' ShowPalettePhoto("GoldenTemple")
+#' ShowPalettePhoto("Kulfi")
+#' ShowPalettePhoto("AmritsariPedeWaliLassi")
 ```
 
 # Palettes
