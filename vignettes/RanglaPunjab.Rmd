@@ -1,5 +1,6 @@
 ---
-title: "RanglaPunjab"
+title: "Package RanglaPunjab"
+author: "Sonia Bhar Ahluwalia"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -15,7 +16,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-
 R code that defines color palettes based on the unique, vibrant culture of Punjab, India.
 
 Rangla Punjab translates to "Colorful Punjab".
@@ -29,15 +29,25 @@ In the meantime, enjoy this R package :-)
 
 ## Functions
 
-<li><a href="#listpalette">List Palette: <code>ListPalette()</code></a></li>
 <li><a href="#ranglapunjab">Rangla Punjab: <code>RanglaPunjab(name)</code></a></li>
+<li><a href="#listpalette">List Palette: <code>ListPalette()</code></a></li>
 <li><a href="#mergepalette">Merge Palette: <code>MergePalette(name, name2, name3)</code></a></li>
 <li><a href="#paintpalette">Paint Palette: <code>PaintPalette(name, name2, name3)</code></a></li>
-<li><a href="#cherrypickpalette">Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3, name4, name5)</code></a></li>
+<li><a href="#cherrypickpalette">Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3)</code></a></li>
 <li><a href="#showpalettephoto">Show Palette Photo: <code>ShowPalettePhoto(name)</code></a></li>
 
 
 
+<h2 id="ranglapunjab">
+Rangla Punjab: <code>RanglaPunjab(name)</code>
+</h2>
+
+Input 1 palette, return vector of colors
+
+```r
+> RanglaPunjab("GoldenTemple")
+[1] "#bdcad0" "#5f8abf" "#ffd860" "#d88821" "#672006"
+```
 
 <h2 id="listpalette">
 List Palette: <code>ListPalette()</code>
@@ -53,17 +63,6 @@ Lists all 24 palettes
 [13] "Kulfi"                "SohniMahiwal"           "HeerRanjha"             "Gidha"                 
 [17] "Gidha2"               "Teej"                   "Phulkari"               "Phulkari2"             
 [21] "Jutti"                "Jutti2"                 "Jutti3"                 "Paranda" 
-```
-
-<h2 id="ranglapunjab">
-Rangla Punjab: <code>RanglaPunjab(name)</code>
-</h2>
-
-Input 1 palette, return vector of colors
-
-```r
-> RanglaPunjab("GoldenTemple")
-[1] "#bdcad0" "#5f8abf" "#ffd860" "#d88821" "#672006"
 ```
 
 <h2 id="mergepalette">
@@ -89,10 +88,10 @@ Input 1 to 3 palettes to display their colors on screen
 <img src="paintpalette.jpg" alt="Golden Temple">
 
 <h2 id="cherrypickpalette">
-<font color="red">UNDER CONSTRUCTION</font> Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3, name4, name5)</code>
+<font color="red">UNDER CONSTRUCTION</font> Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3)</code>
 </h2>
 
-Input 2 to 5 palettes to visually select colors to create new palette
+Input 2 to 3 palettes to visually select colors to create new palette
 
 <h2 id="showpalettephoto">
 Show Palette Photo: <code>ShowPalettePhoto(name)</code>
