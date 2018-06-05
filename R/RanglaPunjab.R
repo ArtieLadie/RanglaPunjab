@@ -186,7 +186,7 @@ RenderPalette <- function(x,name){
 }
 
 
-#' Cherry Pick Palette 
+#' Cherry Pick Palette <---- UNDER CONSTRUCTION
 #' @description This function allows user to cherry pick colors from 2 to 5 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
@@ -210,7 +210,19 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     new_pal <- MergePalette(name,name2,name3)
   }
 
-  
+  if (interactive()){
+    shinyApp(
+      ui = fluidPage(
+        titlePanel("Cherry Pick Your Own Palette!"),
+        sidebarPanel (colourpicker::colourInput("col","Choose colors","white", palette="limited", allowedCols = new_pal)),
+        fluidRow(column(12,verbatimTextOutput("value")))
+      ),
+      server = function(input,output,session){
+        output$value <- renderPrint({input$col})
+      }
+      
+    )
+  }
   
 }
 
