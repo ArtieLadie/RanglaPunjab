@@ -193,6 +193,7 @@ RenderPalette <- function(x,name){
 #' @param name3 Name of 3nd (optional) palette
 #' @usage CherryPickPalette(name, name2, name3)
 #' @return user-defined palette of colors
+#' @import shiny
 #' @export
 #' @examples
 #' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
@@ -208,6 +209,8 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   else if (nargs() == 3){
     new_pal <- MergePalette(name,name2,name3)
   }
+
+  
   
 }
 
