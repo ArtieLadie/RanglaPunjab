@@ -214,11 +214,19 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     shinyApp(
       ui = fluidPage(
         titlePanel("Cherry Pick Your Own Palette!"),
-        sidebarPanel (colourpicker::colourInput("col","Choose colors","white", palette="limited", allowedCols = new_pal)),
-        fluidRow(column(12,verbatimTextOutput("value")))
+        sidebarPanel (
+          colourpicker::colourInput("col","Choose colors","white", palette="limited", allowedCols = new_pal)),
+        mainPanel(
+          h5('Your custom colors',style = "font-weight: bold;"),
+          fluidRow(column(12,verbatimTextOutput("value"))))
       ),
       server = function(input,output,session){
-        output$value <- renderPrint({input$col})
+
+        output$value<-renderPrint({
+          paste(input$col,sep=" ")
+        }
+        )
+        
       }
       
     )
