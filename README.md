@@ -23,7 +23,7 @@ devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
 # Palettes
 
-### Fields of Punjab
+### FieldsOfPunjab
 
 Punjab translates to "Land of Five Rivers". 
 
@@ -37,19 +37,19 @@ Plus the fields provide beautiful backdrop to [Bollywood films](https://www.news
 
 ![Fields of Punjab](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab.jpg)
 
-### Fields of Punjab 2
+### FieldsOfPunjab2
 
 Punjab's fields are so breath-taking, had to add another palette.
 
 ![Fields of Punjab 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab2.jpg)
 
-### Golden Temple
+### GoldenTemple
 
 [Golden Temple](http://www.northsouthtravel.com/10-interesting-facts-about-the-golden-temple) is the oldest place of worship for [Sikhs](https://www.sikhnet.com/pages/who-are-sikhs-what-is-sikhism).
 
 ![Golden Temple](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple.jpg)
 
-### Golden Temple 2
+### GoldenTemple2
 
 And because the Golden Temple looks so different at night, had to add another palette.
 
@@ -69,31 +69,31 @@ Many havelis have fallen into disrepair, yet they remain beautiful reminants of 
 
 ![Haveli](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/haveli.jpg)
 
-### Haveli 2
+### Haveli2
 
 Havelis always had a [courtyard](https://en.wikipedia.org/wiki/Haveli). Usually light, airy, with meticulously decorated structures.
 
 ![Haveli2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/haveli2.jpg)
 
-### Amritsari Kulcha
+### AmritsariKulcha
 
 Mouthwatering dish of [Amritsar, Punjab](https://wikitravel.org/en/Amritsar).
 
 ![Amritsari Kulcha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarikulcha.jpg)
 
-### Chole Bhature
+### CholeBhature
 
 Another mouthwatering dish.
 
 ![Chole Bhature](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/cholebhature.jpg)
 
-### Biryani Rice
+### BiryaniRice
 
 [Biryani Rice](https://en.wikipedia.org/wiki/Biryani), the best rice dish in the world, made with the one and only [Basmati rice](https://en.wikipedia.org/wiki/Basmati), originating from (you guessed it), Punjab.
 
 ![Biryani Rice](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/biryanirice.jpg)
 
-### Amritsari Lassi
+### AmritsariLassi
 
 [Amritsari Lassi](https://www.youtube.com/watch?v=9QuPPmOYs6U) is a thick, cooling yogurt-based (almost buttermilk) drink that compliments these heavy meals.
 
@@ -101,7 +101,7 @@ Or, Lassi can be enjoyed on it's own :-)
 
 ![Amritsari Lassi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/amritsarilassi.jpg)
 
-### Amritsari Pede Wali Lassi
+### AmritsariPedeWaliLassi
 
 Lassi can also be a dessert.
 
@@ -117,13 +117,13 @@ Certainly gives Hot Cocao and Marshmallows a run for their money!
 
 ![Kulfi](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/kulfi.jpg)
 
-### Sohni Mahiwal
+### SohniMahiwal
 
 [Sohni Mahiwal](https://akhizmunawar.wordpress.com/2016/11/01/the-tragic-love-story-of-sohni-mahiwal/) - one of the many timeless and tragic lovestories of Punjab.
 
 ![Sohni Mahiwal](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/sohnimahiwal.jpg)
 
-### Heer Ranjha
+### HeerRanjha
 
 [Heer Ranjha](https://multoghost.wordpress.com/2016/06/06/the-marriage-of-heer-and-ranjha-a-punjabi-love-story/) - one of the many timeless and tragic lovestories of Punjab.
 
@@ -137,7 +137,7 @@ Certainly gives Hot Cocao and Marshmallows a run for their money!
 
 ![Gidha](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/gidha.jpg)
 
-### Gidha 2
+### Gidha2
 
 So many beautiful colors Gidha dancers wear - had to add another palette!
 
@@ -157,7 +157,7 @@ In Punjab, this festival is known as Teeyan. Teeyan involves women getting toget
 
 ![Phulkari](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/phulkari.jpg)
 
-### Phulkari 2
+### Phulkari2
 
 Because I love colors so much.
 
@@ -171,13 +171,13 @@ Phulkaris are usually made into [Dupattas](https://simple.wikipedia.org/wiki/Dup
 
 ![Jutti](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/jutti.jpg)
 
-### Jutti 2
+### Jutti2
 
 More colorful, the better!
 
 ![Jutti 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/jutti2.jpg)
 
-### Jutti 3
+### Jutti3
 
 And who cannot love jutti in every conceivable design!
 
