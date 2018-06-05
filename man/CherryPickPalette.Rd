@@ -2,7 +2,7 @@
 % Please edit documentation in R/RanglaPunjab.R
 \name{CherryPickPalette}
 \alias{CherryPickPalette}
-\title{Cherry Pick Palette}
+\title{Cherry Pick Palette <---- UNDER CONSTRUCTION}
 \usage{
 CherryPickPalette(name, name2, name3)
 }
