@@ -4,19 +4,25 @@
 \alias{MergePalette}
 \title{Merge Palette}
 \usage{
-MergePalette(name, name2)
+MergePalette(name, name2, name3)
 }
 \arguments{
 \item{name}{Name of 1st palette}
 
 \item{name2}{Name of 2nd palette}
+
+\item{name3}{Name of 3nd (optional) palette}
 }
 \value{
-Vector of 10 color values (in the unlikely event there are duplicates, then return less than 10)
+Vector of 10 or 15 color values (in the unlikely event there are duplicates, 
+        then return less than 10 or 15 colors)
 }
 \description{
-This function returns a palette of 10 colors (in the unlikely event there are duplicates, then return less than 10)
+This function takes 2 or 3 palettes and returns a palette of 10 or 15 colors 
+             (in the unlikely event there are duplicates, then return less than 10 or 15)
 }
 \examples{
-MergePalette("Gidha", "Teej")
+MergePalette("AmritsariKulcha", "Phulkari2")
+MergePalette("Gidha", "Jutti2")
+MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
 }

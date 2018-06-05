@@ -4,10 +4,7 @@
 \alias{ListPalette}
 \title{List Palette}
 \usage{
-ListPalette(listname)
-}
-\arguments{
-\item{listname}{Name of palette vector}
+ListPalette()
 }
 \value{
 List of palettes
@@ -16,5 +13,5 @@ List of palettes
 This function returns list of all palettes
 }
 \examples{
-ListPalette("PunjabiPalette")
+ListPalette()
 }

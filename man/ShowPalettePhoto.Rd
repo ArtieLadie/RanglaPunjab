@@ -17,4 +17,6 @@ This function shows photo that inspired a palette
 }
 \examples{
 ShowPalettePhoto("GoldenTemple")
+ShowPalettePhoto("Kulfi")
+ShowPalettePhoto("AmritsariPedeWaliLassi")
 }

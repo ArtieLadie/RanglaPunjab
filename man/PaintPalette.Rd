@@ -4,20 +4,23 @@
 \alias{PaintPalette}
 \title{Paint Palette}
 \usage{
-PaintPalette(name, name2)
+PaintPalette(name, name2, name3)
 }
 \arguments{
 \item{name}{Name of 1st palette}
 
 \item{name2}{Name of 2nd (optional) palette}
+
+\item{name3}{Name of 3rd (optional) palette}
 }
 \value{
 image of colors and description
 }
 \description{
-This function paints an image of 1 or 2 palettes
+This function paints an image of up to 3 palettes
 }
 \examples{
 PaintPalette("Pindh")
 PaintPalette("FieldsOfPunjab","Jutti")
+PaintPalette("FieldsOfPunjab","Jutti","Paranda")
 }

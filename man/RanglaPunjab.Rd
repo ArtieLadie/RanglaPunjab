@@ -16,5 +16,7 @@ Vector of 5 color values
 This function returns a palette of 5 colors
 }
 \examples{
+RanglaPunjab("GoldenTemple")
+RanglaPunjab("SohniMahiwal")
 RanglaPunjab("Teej")
 }
