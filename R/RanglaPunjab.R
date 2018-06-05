@@ -52,14 +52,14 @@ ListPalette <- function(){
 #' @import tidyverse
 #' @export
 #' @examples
-#' RanglaPunjab("CholeBhature")
+#' RanglaPunjab("GoldenTemple")
 #' RanglaPunjab("SohniMahiwal")
 #' RanglaPunjab("Teej")
 RanglaPunjab <- function(name=NULL){
 
   pal <- NULL
   
-  if (nargs() != 1){
+  if (nargs() < 1){
     stop("Enter 1 valid palettes. Run ListPalette() for list of palettes.")
   }
   
@@ -185,6 +185,32 @@ RenderPalette <- function(x,name){
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
+
+#' Cherry Pick Palette 
+#' @description This function allows user to cherry pick colors from 2 to 5 palettes
+#' @param name Name of 1st palette
+#' @param name2 Name of 2nd palette
+#' @param name3 Name of 3nd (optional) palette
+#' @usage CherryPickPalette(name, name2, name3)
+#' @return user-defined palette of colors
+#' @export
+#' @examples
+#' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
+#' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
+CherryPickPalette <- function (name, name2=NULL, name3=NULL){
+  
+  if ((nargs() < 2) || (nargs() > 3)){
+    stop("Enter 2 or 3 valid palettes. Run ListPalette() for list of palettes.")
+  }
+  if (nargs() == 2){
+    new_pal <- MergePalette(name,name2)
+  }
+  else if (nargs() == 3){
+    new_pal <- MergePalette(name,name2,name3)
+  }
+  
+}
+
 #' Show Palette Photo
 #' @description This function shows photo that inspired a palette
 #' @param name palette name
@@ -205,33 +231,3 @@ ShowPalettePhoto <- function(name=NULL){
   graphics::plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
   graphics::rasterImage(jj,0,0,1,1)
 }
-
-#' Cherry Pick Palette 
-#' @description This function allows user to cherry pick colors from 3 palettes
-#' @param name Name of 1st palette
-#' @param name2 Name of 2nd palette
-#' @param name3 Name of 3nd (optional) palette
-#' @param name4 Name of 4th (optional) palette
-#' @param name5 Name of 5th (optional) palette
-#' @usage CherryPickPalette(name, name2, name3, name4, name5)
-#' @return user-defined palette of colors
-#' @export
-#' @examples
-#' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
-#' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
-#' CherryPickPalette("HeerRanjha","FieldsOfPunjab2","Haveli", "Phulkari2")
-#' CherryPickPalette("AmritsariLassi","Gidha2","Jutti3", "Phulkari","GoldenTemple")
-CherryPickPalette <- function (name, name2=NULL, name3=NULL, name4=NULL, name5=NULL){
-  
-  new_name <- NULL
-  args <- unlist(mget(names(formals())))
-  
-  if (nargs() < 2){
-    stop("Enter 2 to 5 valid palettes. Run ListPalette() for list of palettes.")
-  }
-  
-  if (anyDuplicated(args)){
-    stop("Enter unique palettes only. Run ListPalette() for list of palettes.")
-  }
-}
-
