@@ -17,7 +17,8 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: tidyverse,
     jpeg,
-    shiny
+    shiny,
+    colourpicker
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
