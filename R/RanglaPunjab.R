@@ -10,7 +10,7 @@ PunjabiPalette <- list (
   Haveli2 = c("#ecece9", "#81826c", "#5d5f64", "#69332e", "#5c4e48"),
   AmritsariKulcha = c("#e3e4d9", "#ebdc9c", "#b3340e", "#67140a", "#2a231d"),
   CholeBhature = c("#7cab70", "#d9bf9c", "#a04d05", "#995f7e", "#972107"),
-  BiryaniRice = c("#efc04d","#d94520","#527934","2d1409","#084365"),
+  BiryaniRice = c("#efc04d","#d94520","#527934","#2d1409","#084365"),
   AmritsariLassi = c("#d7dacc","#efedd0","#a68b4f","#d5dfeb","#6e675c"),
   AmritsariPedeWaliLassi = c("#f2f3e7","#c6b49c","#f9e060","#837e53","#503316"),
   Kulfi = c("#f0ecb0","#a96337", "#4a4000", "#4a121b", "#001a24"),
@@ -211,22 +211,23 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   }
 
   if (interactive()){
+    colorfile <- paste(getwd(),"colorfile.txt",sep="/")
+    if (!file.exists(colorfile)){
+      file.create(colorfile)
+    }
     shinyApp(
       ui = fluidPage(
         titlePanel("Cherry Pick Your Own Palette!"),
-        sidebarPanel (
-          colourpicker::colourInput("col","Choose colors","white", palette="limited", allowedCols = new_pal)),
+        sidebarPanel (hr(),
+                      selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
+                      ),
         mainPanel(
           h5('Your custom colors',style = "font-weight: bold;"),
-          fluidRow(column(12,verbatimTextOutput("value"))))
+          fluidRow(column(12,verbatimTextOutput("col"))))
       ),
       server = function(input,output,session){
-
-        output$value<-renderPrint({
-          paste(input$col,sep=" ")
-        }
-        )
-        
+        output$col <- renderPrint(input$col)
+        file.append(colorfile,output$col)
       }
       
     )
