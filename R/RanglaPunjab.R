@@ -234,7 +234,7 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
           renderPrint(outuputdata())
         }
         session$onSessionEnded(function(){
-          message <- paste(outuputdata(),"\n")
+          message <- paste(isolate(outuputdata())," ")
           cat(message,file=colorfile, append=TRUE)
         })
       }
