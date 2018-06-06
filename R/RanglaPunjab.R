@@ -226,13 +226,21 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
           fluidRow(column(12,verbatimTextOutput("col"))))
       ),
       server = function(input,output,session){
-        output$col <- renderPrint(input$col)
-        file.append(colorfile,output$col)
+        outuputdata<-  reactive({
+          input$col
+        })
+        
+        output$col <- { 
+          renderPrint(outuputdata())
+        }
+        session$onSessionEnded(function(){
+          message <- paste(outuputdata(),"\n")
+          cat(message,file=colorfile, append=TRUE)
+        })
       }
       
     )
   }
-  
 }
 
 #' Show Palette Photo
