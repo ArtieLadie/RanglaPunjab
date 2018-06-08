@@ -1,4 +1,3 @@
-
 # List of palettes
 PunjabiPalette <- list (
   FieldsOfPunjab = c("#fda726", "#d75b07", "#702e06", "#514617", "#313407"),
@@ -43,7 +42,7 @@ PunjabiPalette <- list (
 ListPalette <- function(){
   names(PunjabiPalette)
 }
-  
+
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
 #' @param name Palette name
@@ -56,7 +55,7 @@ ListPalette <- function(){
 #' RanglaPunjab("SohniMahiwal")
 #' RanglaPunjab("Teej")
 RanglaPunjab <- function(name=NULL){
-
+  
   pal <- NULL
   
   if (nargs() < 1){
@@ -132,7 +131,7 @@ PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
   if (nargs() == 0){
     stop("Enter 1 to 3 valid palettes. Run ListPalette() for list of palettes.")
   }
-
+  
   if ((nargs() > 1) && (anyDuplicated(args))){
     stop("Enter unique palettes only. Run ListPalette() for list of palettes.")
   }
@@ -159,13 +158,13 @@ PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
   else{
     new_name <- name
   }
-
+  
   RenderPalette(x,new_name)
   
   #n <- length(x)
   #old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
   #on.exit(graphics::par(old))
-
+  
   #graphics::image(1:n, 1, as.matrix(1:n), col = x,
   #      ylab = "", xaxt = "n", yaxt = "n", bty = "n")
   #graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
@@ -185,6 +184,9 @@ RenderPalette <- function(x,name){
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
+# Internal, hidden function
+# Called by CherryPickPalette()
+CustomPalette <- function(x){}
 
 #' Cherry Pick Palette <---- UNDER CONSTRUCTION
 #' @description This function allows user to cherry pick colors from 2 to 5 palettes
@@ -209,7 +211,7 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   else if (nargs() == 3){
     new_pal <- MergePalette(name,name2,name3)
   }
-
+  
   
   
   if (interactive()){
@@ -222,7 +224,7 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
         titlePanel("Cherry Pick Your Own Palette!"),
         sidebarPanel (hr(),
                       selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
-                      ),
+        ),
         mainPanel(
           h5('Your custom colors',style = "font-weight: bold;"),
           fluidRow(column(12,verbatimTextOutput("col"))))
