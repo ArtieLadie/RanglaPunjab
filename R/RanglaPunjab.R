@@ -185,8 +185,42 @@ RenderPalette <- function(x,name){
 }
 
 # Internal, hidden function
-# Called by CherryPickPalette()
-CustomPalette <- function(x){}
+# CherryPickPalette()
+CustomPalette <- function(new_pal){
+  if (interactive()){
+    colorfile <- paste(getwd(),"colorfile.txt",sep="/")
+    if (!file.exists(colorfile)){
+      file.create(colorfile)
+    }
+    shinyApp(
+      ui = fluidPage(
+        titlePanel("Cherry Pick Your Own Palette!"),
+        sidebarPanel (hr(),
+                      selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
+        ),
+        mainPanel(
+          h5('Your custom colors',style = "font-weight: bold;"),
+          fluidRow(column(12,verbatimTextOutput("col"))))
+      ),
+      server = function(input,output,session){
+        outputdata<-  reactive({
+          input$col
+        })
+        
+        output$col <- { 
+          renderPrint(outputdata())
+        }
+        session$onSessionEnded(function(){
+          message <- paste(isolate(outputdata())," ")
+          cat(message,file=colorfile, append=TRUE)
+          customcolors <- scan(file=colorfile," ")
+          stopApp(customcolors)
+          customcolors
+        })
+      }
+    )
+  }
+}
 
 #' Cherry Pick Palette <---- UNDER CONSTRUCTION
 #' @description This function allows user to cherry pick colors from 2 to 5 palettes
@@ -212,41 +246,12 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     new_pal <- MergePalette(name,name2,name3)
   }
   
+ 
+  customcolors <- runApp(CustomPalette(new_pal = NULL))
+
+  customcolors
   
-  
-  if (interactive()){
-    colorfile <- paste(getwd(),"colorfile.txt",sep="/")
-    if (!file.exists(colorfile)){
-      file.create(colorfile)
-    }
-    shinyApp(
-      ui = fluidPage(
-        titlePanel("Cherry Pick Your Own Palette!"),
-        sidebarPanel (hr(),
-                      selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
-        ),
-        mainPanel(
-          h5('Your custom colors',style = "font-weight: bold;"),
-          fluidRow(column(12,verbatimTextOutput("col"))))
-      ),
-      server = function(input,output,session){
-        outuputdata<-  reactive({
-          input$col
-        })
-        
-        output$col <- { 
-          renderPrint(outuputdata())
-        }
-        session$onSessionEnded(function(){
-          message <- paste(isolate(outuputdata())," ")
-          cat(message,file=colorfile, append=TRUE)
-          customcolors <- scan(file=colorfile," ")
-          stopApp(customcolors)
-          customcolors
-        })
-      }
-    )
-  }
+
 }
 
 #' Show Palette Photo
