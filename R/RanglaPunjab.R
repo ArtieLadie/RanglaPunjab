@@ -210,6 +210,8 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     new_pal <- MergePalette(name,name2,name3)
   }
 
+  
+  
   if (interactive()){
     colorfile <- paste(getwd(),"colorfile.txt",sep="/")
     if (!file.exists(colorfile)){
@@ -236,11 +238,19 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
         session$onSessionEnded(function(){
           message <- paste(isolate(outuputdata())," ")
           cat(message,file=colorfile, append=TRUE)
+          customcolors <- scan(file=colorfile," ")
+          stopApp(customcolors)
+          
         })
       }
-      
     )
+    
   }
+  
+  # read from file into variable
+  
+  # delete file
+  # paint colors
 }
 
 #' Show Palette Photo
