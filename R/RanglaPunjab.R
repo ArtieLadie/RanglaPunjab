@@ -240,17 +240,11 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
           cat(message,file=colorfile, append=TRUE)
           customcolors <- scan(file=colorfile," ")
           stopApp(customcolors)
-          
+          customcolors
         })
       }
     )
-    
   }
-  
-  # read from file into variable
-  
-  # delete file
-  # paint colors
 }
 
 #' Show Palette Photo
