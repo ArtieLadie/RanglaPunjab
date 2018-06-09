@@ -184,9 +184,8 @@ RenderPalette <- function(x,name){
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
-# Internal, hidden function
-# CherryPickPalette()
-CustomPalette <- function(new_pal){
+
+CustomPal <- function(new_pal){
   if (interactive()){
     colorfile <- paste(getwd(),"colorfile.txt",sep="/")
     if (!file.exists(colorfile)){
@@ -236,6 +235,8 @@ CustomPalette <- function(new_pal){
 #' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
 CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   
+  new_pal <- NULL
+  
   if ((nargs() < 2) || (nargs() > 3)){
     stop("Enter 2 or 3 valid palettes. Run ListPalette() for list of palettes.")
   }
@@ -246,12 +247,14 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     new_pal <- MergePalette(name,name2,name3)
   }
   
- 
-  customcolors <- runApp(CustomPalette(new_pal = NULL))
-
-  customcolors
+  CustomPal(new_pal)
   
-
+  colorfile <- paste(getwd(),"colorfile.txt",sep="/")
+  if (file.exists(colorfile)){
+    customcolors <- scan("colorfile.txt", character())
+    customcolors
+  }
+  
 }
 
 #' Show Palette Photo
