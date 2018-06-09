@@ -26,6 +26,8 @@ PunjabiPalette <- list (
   Paranda = c("#eaa32b", "#f45d59", "#c33dd2", "#92214c", "#201274")
 )
 
+customcolors <<- NULL
+
 #' List Palette
 #' @description This function returns list of all palettes
 #' @usage ListPalette()
@@ -212,14 +214,19 @@ CustomPal <- function(new_pal){
         session$onSessionEnded(function(){
           message <- paste(isolate(outputdata())," ")
           cat(message,file=colorfile, append=TRUE)
-          customcolors <- scan(file=colorfile," ")
+          customcolors <<- scan(file=colorfile," ")
           stopApp(customcolors)
           customcolors
+          file.remove(colorfile)
         })
       }
     )
   }
+  
 }
+
+
+GetCustomPal <- function(){}
 
 #' Cherry Pick Palette <---- UNDER CONSTRUCTION
 #' @description This function allows user to cherry pick colors from 2 to 5 palettes
@@ -249,11 +256,6 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   
   CustomPal(new_pal)
   
-  colorfile <- paste(getwd(),"colorfile.txt",sep="/")
-  if (file.exists(colorfile)){
-    customcolors <- scan("colorfile.txt", character())
-    customcolors
-  }
   
 }
 
