@@ -26,7 +26,7 @@ PunjabiPalette <- list (
   Paranda = c("#eaa32b", "#f45d59", "#c33dd2", "#92214c", "#201274")
 )
 
-customcolors <<- NULL
+cherrypickedpalette <<- NULL
 
 #' List Palette
 #' @description This function returns list of all palettes
@@ -193,14 +193,14 @@ CustomPal <- function(new_pal){
     if (!file.exists(colorfile)){
       file.create(colorfile)
     }
-    customcolors <- runApp(list(
+    cherrypickedpalette <- runApp(list(
       ui = fluidPage(
         titlePanel("Cherry Pick Your Own Palette!"),
         sidebarPanel (hr(),
                       selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
         ),
         mainPanel(
-          h5('Your custom colors',style = "font-weight: bold;"),
+          h5('Your Cherry-Picked Palette',style = "font-weight: bold;"),
           fluidRow(column(12,verbatimTextOutput("col"))))
       ),
       server = function(input,output,session){
@@ -214,9 +214,9 @@ CustomPal <- function(new_pal){
         session$onSessionEnded(function(){
           message <- paste(isolate(outputdata())," ")
           cat(message,file=colorfile, append=TRUE)
-          customcolors <<- scan(file=colorfile," ")
-          stopApp(customcolors)
-          customcolors
+          cherrypickedpalette <<- scan(file=colorfile," ")
+          stopApp(cherrypickedpalette)
+          cherrypickedpalette
           file.remove(colorfile)
         })
       }
@@ -254,9 +254,12 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
     new_pal <- MergePalette(name,name2,name3)
   }
   
-  CustomPal(new_pal)
+  cherrypickedpalette <- CustomPal(new_pal)
   
-  
+  if (!is.null(cherrypickedpalette)){
+    RenderPalette(cherrypickedpalette,"Cherry-Picked Colors")
+  }
+    
 }
 
 #' Show Palette Photo
