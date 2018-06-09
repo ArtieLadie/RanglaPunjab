@@ -193,7 +193,7 @@ CustomPal <- function(new_pal){
     if (!file.exists(colorfile)){
       file.create(colorfile)
     }
-    shinyApp(
+    customcolors <- runApp(list(
       ui = fluidPage(
         titlePanel("Cherry Pick Your Own Palette!"),
         sidebarPanel (hr(),
@@ -221,8 +221,8 @@ CustomPal <- function(new_pal){
         })
       }
     )
+    )
   }
-  
 }
 
 
