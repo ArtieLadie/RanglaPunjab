@@ -17,7 +17,7 @@ CherryPickPalette(name, name2, name3)
 user-defined palette of colors
 }
 \description{
-This function allows user to cherry pick colors from 2 to 5 palettes
+This function allows user to cherry pick colors from 2 to 3 palettes
 }
 \examples{
 CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
