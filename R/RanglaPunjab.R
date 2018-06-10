@@ -162,12 +162,16 @@ PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
   }
   
   RenderPalette(x,new_name)
-
+  
 }
 
 # Internal, hidden function
 # Called by PaintPalette() and CherryPickPalette()
 RenderPalette <- function(x,name){
+  
+  if ((missing(x)) || (missing(name))){
+    stop("Internal error, please troubleshoot")
+  }
   n <- length(x)
   old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
   on.exit(graphics::par(old))
@@ -178,7 +182,8 @@ RenderPalette <- function(x,name){
   graphics::text((n + 1) / 2, 1, labels = name, cex = 2, family = "serif")
 }
 
-
+# Internal, hidden function
+# Called by CherryPickPalette()
 CustomPal <- function(new_pal){
   if (interactive()){
     colorfile <- paste(getwd(),"colorfile.txt",sep="/")
@@ -195,8 +200,8 @@ CustomPal <- function(new_pal){
           h5('Your Cherry-Picked Palette',style = "font-weight: bold;"),
           fluidRow(column(12,verbatimTextOutput("col"))),
           actionButton("action", label = "I'm Done")
-          )
-      ),
+        )
+      ),#end fluidPage
       server = function(input,output,session){
         outputdata<-  reactive({
           input$col
@@ -207,18 +212,19 @@ CustomPal <- function(new_pal){
         }
         
         
-      observeEvent(input$action, {
-        if (!is.null(outputdata)){
-          message <- paste(isolate(outputdata())," ")
-          cat(message,file=colorfile, append=TRUE)
-          cherrypickedpalette <<- scan(file=colorfile," ")
-          stopApp(cherrypickedpalette)
-          file.remove(colorfile)
-        }
-      })
-    }
-  )#end list
-  )#end runApp
+        observeEvent(input$action, {
+          if (!is.null(outputdata)){
+            message <- paste(isolate(outputdata())," ")
+            cat(message,file=colorfile, append=TRUE)
+            cherrypickedpalette <<- scan(file=colorfile," ")
+            stopApp(cherrypickedpalette)
+            file.remove(colorfile)
+          }#end !is.null(outputdata)
+        }#end input$action,
+        )#end observeEvent
+      }#end server
+    )#end list
+    )#end runApp
   }#end if interactive
 }
 
