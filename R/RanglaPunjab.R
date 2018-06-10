@@ -186,10 +186,6 @@ RenderPalette <- function(x,name){
 # Called by CherryPickPalette()
 CustomPal <- function(new_pal){
   if (interactive()){
-    colorfile <- paste(getwd(),"colorfile.txt",sep="/")
-    if (!file.exists(colorfile)){
-      file.create(colorfile)
-    }
     cherrypickedpalette <- runApp(list(
       ui = fluidPage(
         titlePanel("Cherry Pick Your Own Palette!"),
@@ -214,13 +210,8 @@ CustomPal <- function(new_pal){
         
         observeEvent(input$action, {
           if (!is.null(outputdata)){
-            #message <- paste(isolate(outputdata())," ")
             cherrypickedpalette <<- paste(isolate(outputdata()))
             stopApp(cherrypickedpalette)
-            #cat(message,file=colorfile, append=TRUE)
-            #cherrypickedpalette <<- scan(file=colorfile," ")
-            #stopApp(cherrypickedpalette)
-            #file.remove(colorfile)
           }#end !is.null(outputdata)
         }#end input$action,
         )#end observeEvent
