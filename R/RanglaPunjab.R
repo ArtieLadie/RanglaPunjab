@@ -201,7 +201,9 @@ CustomPal <- function(new_pal){
         ),
         mainPanel(
           h5('Your Cherry-Picked Palette',style = "font-weight: bold;"),
-          fluidRow(column(12,verbatimTextOutput("col"))))
+          fluidRow(column(12,verbatimTextOutput("col"))),
+          actionButton("action", label = "I'm Done")
+          )
       ),
       server = function(input,output,session){
         outputdata<-  reactive({
@@ -211,12 +213,18 @@ CustomPal <- function(new_pal){
         output$col <- { 
           renderPrint(outputdata())
         }
+        
+        
+        observe({
+          if (input$action > 0) 
+            stopApp()
+        })
+        
         session$onSessionEnded(function(){
           message <- paste(isolate(outputdata())," ")
           cat(message,file=colorfile, append=TRUE)
           cherrypickedpalette <<- scan(file=colorfile," ")
           stopApp(cherrypickedpalette)
-          cherrypickedpalette
           file.remove(colorfile)
         })
       }
@@ -226,7 +234,6 @@ CustomPal <- function(new_pal){
 }
 
 
-GetCustomPal <- function(){}
 
 #' Cherry Pick Palette <---- UNDER CONSTRUCTION
 #' @description This function allows user to cherry pick colors from 2 to 5 palettes
@@ -257,9 +264,9 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   cherrypickedpalette <- CustomPal(new_pal)
   
   if (!is.null(cherrypickedpalette)){
-    RenderPalette(cherrypickedpalette,"Cherry-Picked Colors")
+    RenderPalette(cherrypickedpalette,"Cherry-Picked Palette")
   }
-    
+  
 }
 
 #' Show Palette Photo
