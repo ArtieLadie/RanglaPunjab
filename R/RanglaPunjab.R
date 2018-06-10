@@ -214,11 +214,13 @@ CustomPal <- function(new_pal){
         
         observeEvent(input$action, {
           if (!is.null(outputdata)){
-            message <- paste(isolate(outputdata())," ")
-            cat(message,file=colorfile, append=TRUE)
-            cherrypickedpalette <<- scan(file=colorfile," ")
+            #message <- paste(isolate(outputdata())," ")
+            cherrypickedpalette <<- paste(isolate(outputdata()))
             stopApp(cherrypickedpalette)
-            file.remove(colorfile)
+            #cat(message,file=colorfile, append=TRUE)
+            #cherrypickedpalette <<- scan(file=colorfile," ")
+            #stopApp(cherrypickedpalette)
+            #file.remove(colorfile)
           }#end !is.null(outputdata)
         }#end input$action,
         )#end observeEvent
