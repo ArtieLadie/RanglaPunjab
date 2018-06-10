@@ -162,15 +162,7 @@ PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
   }
   
   RenderPalette(x,new_name)
-  
-  #n <- length(x)
-  #old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
-  #on.exit(graphics::par(old))
-  
-  #graphics::image(1:n, 1, as.matrix(1:n), col = x,
-  #      ylab = "", xaxt = "n", yaxt = "n", bty = "n")
-  #graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
-  #graphics::text((n + 1) / 2, 1, labels = new_name, cex = 2, family = "serif")
+
 }
 
 # Internal, hidden function
@@ -215,28 +207,25 @@ CustomPal <- function(new_pal){
         }
         
         
-        observe({
-          if (input$action > 0) 
-            stopApp()
-        })
-        
-        session$onSessionEnded(function(){
+      observeEvent(input$action, {
+        if (!is.null(outputdata)){
           message <- paste(isolate(outputdata())," ")
           cat(message,file=colorfile, append=TRUE)
           cherrypickedpalette <<- scan(file=colorfile," ")
           stopApp(cherrypickedpalette)
           file.remove(colorfile)
-        })
-      }
-    )
-    )
-  }
+        }
+      })
+    }
+  )#end list
+  )#end runApp
+  }#end if interactive
 }
 
 
 
 #' Cherry Pick Palette <---- UNDER CONSTRUCTION
-#' @description This function allows user to cherry pick colors from 2 to 5 palettes
+#' @description This function allows user to cherry pick colors from 2 to 3 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
 #' @param name3 Name of 3nd (optional) palette
