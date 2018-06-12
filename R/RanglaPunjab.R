@@ -188,13 +188,14 @@ CustomPal <- function(new_pal){
   if (interactive()){
     cherrypickedpalette <- runApp(list(
       ui = fluidPage(
-        theme = "bootstrap.css",
+        #theme = shinythemes::shinytheme("slate"),
+        theme = "h5.css",
         titlePanel("Cherry Pick Your Own Palette!"),
         sidebarPanel (hr(),
                       selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
         ),
         mainPanel(
-          h5('Your Cherry-Picked Palette',style = "font-weight: bold;"),
+          h5('Your Cherry-Picked Palette'),
           fluidRow(column(12,verbatimTextOutput("col"))),
           actionButton("action", label = "Save My Palette")
         )
@@ -231,7 +232,7 @@ CustomPal <- function(new_pal){
 #' @param name3 Name of 3nd (optional) palette
 #' @usage CherryPickPalette(name, name2, name3)
 #' @return user-defined palette of colors
-#' @import shiny
+#' @import shiny 
 #' @export
 #' @examples
 #' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
