@@ -188,11 +188,28 @@ CustomPal <- function(new_pal){
   if (interactive()){
     cherrypickedpalette <- runApp(list(
       ui = fluidPage(
-        #theme = shinythemes::shinytheme("slate"),
-        theme = "h5.css",
-        titlePanel("Cherry Pick Your Own Palette!"),
-        sidebarPanel (hr(),
-                      selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
+        tags$head(
+          tags$style(HTML("
+                          @import url('//fonts.googleapis.com/css?family=Lobster|Cabin:400,700');
+                          
+                          h1 {
+                          font-family: 'Lobster', cursive;
+                          font-weight: 500;
+                          line-height: 1.1;
+                          color: #dc6478;
+                          }
+                          
+                          h5 {
+                          color: #dc6478;
+                          }
+                          
+                          option {
+                          background-color: new_pal;
+                          }
+                          "))
+          ),
+        headerPanel("Cherry Pick Your Own Palette!"),
+        sidebarPanel (selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
         ),
         mainPanel(
           h5('Your Cherry-Picked Palette'),
