@@ -54,7 +54,7 @@ Punjab's fields are so breath-taking, had to add another palette.
 
 ### GoldenTemple2
 
-And because the Golden Temple looks so different at night, had to add another palette.
+And because the Golden Temple looks so different at Amrit Vaylaa (the [ambrosial hours](http://www.wahegurunet.com/wake-up-refreshed) before dawn), had to add another palette.
 
 ![Golden Temple 2](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/goldentemple2.jpg)
 
