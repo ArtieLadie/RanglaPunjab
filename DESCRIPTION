@@ -1,6 +1,9 @@
 Package: RanglaPunjab
 Title: Displays Palette of 5 Colors
 Version: 2.3.1
+Authors@R: person("Sonia", "Ahluwalia", email = "sonia.bhar.ahluwalia@gmail.com", role = c("aut", "cre"))
+Author: Sonia Ahluwalia [aut, cre]
+Maintainer: Sonia Ahluwalia <sonia.bhar.ahluwalia@gmail.com>
 Description: Displays palette of 5 colors based on photos depicting the unique 
              and vibrant culture of Punjab in Northern India. Since Punjab translates 
              to ``Land of 5 Rivers'' there are 5 colors per palette. If users need 
@@ -17,7 +20,9 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: tidyverse,
     jpeg,
-    shiny
+    shiny,
+    shinythemes,
+    ggplot2
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr

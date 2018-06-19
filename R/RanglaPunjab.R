@@ -186,35 +186,20 @@ RenderPalette <- function(x,name){
 # Called by CherryPickPalette()
 CustomPal <- function(new_pal){
   if (interactive()){
+    CreatePlot = function ( bac="green") {
+      ggplot2::ggplot()+ggplot2::theme(panel.background = ggplot2::element_rect(fill = bac))
+    }
     cherrypickedpalette <- runApp(list(
       ui = fluidPage(
-        tags$head(
-          tags$style(HTML("
-                          @import url('//fonts.googleapis.com/css?family=Lobster|Cabin:400,700');
-                          
-                          h1 {
-                          font-family: 'Lobster', cursive;
-                          font-weight: 500;
-                          line-height: 1.1;
-                          color: #dc6478;
-                          }
-                          
-                          h5 {
-                          color: #dc6478;
-                          }
-                          
-                          option {
-                          background-color: new_pal;
-                          }
-                          "))
-          ),
         headerPanel("Cherry Pick Your Own Palette!"),
-        sidebarPanel (selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
+        sidebarPanel (
+          selectInput('col', 'Options', new_pal, multiple=TRUE, selectize=FALSE, size = 15)
         ),
         mainPanel(
           h5('Your Cherry-Picked Palette'),
-          fluidRow(column(12,verbatimTextOutput("col"))),
-          actionButton("action", label = "Save My Palette")
+          fluidRow(column(9,verbatimTextOutput("col"))),
+          actionButton("action", label = "Save My Palette"),
+          plotOutput("cherrycolors")
         )
       ),#end fluidPage
       server = function(input,output,session){
@@ -226,6 +211,9 @@ CustomPal <- function(new_pal){
           renderPrint(outputdata())
         }
         
+        output$cherrycolors=renderPlot({
+          CreatePlot(bac=input$col)
+        }, height = 450, width = 450 ) 
         
         observeEvent(input$action, {
           if (!is.null(outputdata)){
