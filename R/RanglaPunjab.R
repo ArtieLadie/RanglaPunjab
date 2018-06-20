@@ -186,9 +186,6 @@ RenderPalette <- function(x,name){
 # Called by CherryPickPalette()
 CustomPal <- function(new_pal){
   if (interactive()){
-    CreatePlot = function ( bac="green") {
-      ggplot2::ggplot()+ggplot2::theme(panel.background = ggplot2::element_rect(fill = bac))
-    }
     cherrypickedpalette <- runApp(list(
       ui = fluidPage(
         headerPanel("Cherry Pick Your Own Palette!"),
