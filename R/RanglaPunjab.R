@@ -203,7 +203,7 @@ CustomPal <- function(new_pal){
         )
       ),#end fluidPage
       server = function(input,output,session){
-        outputdata<-  reactive({
+        outputdata <-  reactive({
           input$col
         })
         
@@ -212,12 +212,21 @@ CustomPal <- function(new_pal){
         }
         
         output$cherrycolors=renderPlot({
-          CreatePlot(bac=input$col)
+          if (!is.null(input$col))
+          {
+            n <- length(input$col)
+            old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
+            on.exit(graphics::par(old))
+            graphics::image(1:n, 1, as.matrix(1:n), col = input$col,
+                          ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+            graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
+            graphics::text((n + 1) / 2, 1, labels = "Cherry-Picked Palette", cex = 2, family = "serif")}
         }, height = 450, width = 450 ) 
         
         observeEvent(input$action, {
           if (!is.null(outputdata)){
             cherrypickedpalette <<- paste(isolate(outputdata()))
+            print("Colors stored in variable cherrypickedpalette")
             stopApp(cherrypickedpalette)
           }#end !is.null(outputdata)
         }#end input$action,
@@ -258,9 +267,9 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   
   cherrypickedpalette <- CustomPal(new_pal)
   
-  if (!is.null(cherrypickedpalette)){
-    RenderPalette(cherrypickedpalette,"Cherry-Picked Palette")
-  }
+  #if (!is.null(cherrypickedpalette)){
+   # RenderPalette(cherrypickedpalette,"Cherry-Picked Palette")
+  #}
   
 }
 
