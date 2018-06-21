@@ -258,10 +258,7 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   }
   
   cherrypickedpalette <- CustomPal(new_pal)
-  
-  #if (!is.null(cherrypickedpalette)){
-   # RenderPalette(cherrypickedpalette,"Cherry-Picked Palette")
-  #}
+
   
 }
 
