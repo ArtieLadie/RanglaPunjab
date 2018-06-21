@@ -24,31 +24,6 @@ install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
 
-## In Your Code
-
-Use `RanglaPunjab` to color pie charts.
-
-```r
-library(RanglaPunjab)
-library(plotrix)
-
-slices <- c(10, 12, 4, 16, 8) 
-lbls <- c("US", "UK", "Australia", "Germany", "France")
-pie3D(slices,labels=lbls, explode=0.1, col=RanglaPunjab("Gidha"), main="Pie Chart of Countries ")
-```
-
-Use `CherryPickPalette` to dynamically color bar plots.
-
-```r
-library(RanglaPunjab)
-
-counts <- table(mtcars$vs, mtcars$gear)
-barplot(counts, main="Car Distribution by Gears and VS",
-        xlab="Number of Gears", col=CherryPickPalette("Teej","Jutti"),
-        legend = rownames(counts))
-```
-
-
 # Palettes
 
 ### FieldsOfPunjab
