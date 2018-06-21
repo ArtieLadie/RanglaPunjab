@@ -211,13 +211,8 @@ CustomPal <- function(new_pal){
         output$cherrycolors=renderPlot({
           if (!is.null(input$col))
           {
-            n <- length(input$col)
-            old <- graphics::par(mar = c(0.5, 0.5, 0.5, 0.5))
-            on.exit(graphics::par(old))
-            graphics::image(1:n, 1, as.matrix(1:n), col = input$col,
-                          ylab = "", xaxt = "n", yaxt = "n", bty = "n")
-            graphics::rect(0, 0.9, n + 1, 1.1, col = grDevices::rgb(1, 1, 1, 0.8), border = NA)
-            graphics::text((n + 1) / 2, 1, labels = "Cherry-Picked Palette", cex = 2, family = "serif")}
+            RenderPalette(input$col, "Cherry-Picked Palette")
+          }
         }, height = 450, width = 450 ) 
         
         observeEvent(input$action, {
