@@ -48,7 +48,7 @@ ListPalette <- function(){
 #' Palette of 5 Colors
 #' @description This function returns a palette of 5 colors
 #' @param name Palette name
-#' @usage RanglaPunjab(name)
+#' @param ... Numeric, complex, or logical vectors
 #' @return Vector of 5 color values
 #' @import tidyverse
 #' @export
@@ -56,7 +56,7 @@ ListPalette <- function(){
 #' RanglaPunjab("GoldenTemple")
 #' RanglaPunjab("SohniMahiwal")
 #' RanglaPunjab("Teej")
-RanglaPunjab <- function(name=NULL){
+RanglaPunjab <- function(name=NULL,...){
   
   pal <- NULL
   
@@ -79,7 +79,7 @@ RanglaPunjab <- function(name=NULL){
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
 #' @param name3 Name of 3nd (optional) palette
-#' @usage MergePalette(name, name2, name3)
+#' @param ... Numeric, complex, or logical vectors
 #' @return Vector of 10 or 15 color values (in the unlikely event there are duplicates, 
 #'         then return less than 10 or 15 colors)
 #' @export
@@ -87,7 +87,7 @@ RanglaPunjab <- function(name=NULL){
 #' MergePalette("AmritsariKulcha", "Phulkari2")
 #' MergePalette("Gidha", "Jutti2")
 #' MergePalette("FieldsOfPunjab","GoldenTemple2","Jutti3")
-MergePalette <- function(name,name2=NULL,name3=NULL){
+MergePalette <- function(name,name2=NULL,name3=NULL,...){
   
   pal <- NULL
   pal2 <- NULL
@@ -118,14 +118,14 @@ MergePalette <- function(name,name2=NULL,name3=NULL){
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd (optional) palette
 #' @param name3 Name of 3rd (optional) palette
-#' @usage PaintPalette(name, name2, name3)
+#' @param ... Numeric, complex, or logical vectors
 #' @return image of colors and description
 #' @export
 #' @examples
 #' PaintPalette("Pindh")
 #' PaintPalette("FieldsOfPunjab","Jutti")
 #' PaintPalette("FieldsOfPunjab","Jutti","Paranda")
-PaintPalette <- function(name=NULL, name2=NULL, name3=NULL) {
+PaintPalette <- function(name=NULL, name2=NULL, name3=NULL,...) {
   
   new_name <- NULL
   args <- unlist(mget(names(formals())))
@@ -218,7 +218,7 @@ CustomPal <- function(new_pal){
         observeEvent(input$action, {
           if (!is.null(outputdata)){
             cherrypickedpalette <<- paste(isolate(outputdata()))
-            print("Colors stored in variable cherrypickedpalette")
+            print(noquote("Colors stored in 'cherrypickedpalette'"))
             stopApp(cherrypickedpalette)
           }#end !is.null(outputdata)
         }#end input$action,
@@ -236,16 +236,16 @@ CustomPal <- function(new_pal){
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
 #' @param name3 Name of 3nd (optional) palette
-#' @usage CherryPickPalette(name, name2, name3)
+#' @param ... Numeric, complex, or logical vectors
 #' @return user-defined palette of colors
 #' @import shiny 
 #' @export
 #' @examples
 #' CherryPickPalette("GoldenTemple","AmritsariPedeWaliLassi")
 #' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
-CherryPickPalette <- function (name, name2=NULL, name3=NULL){
+CherryPickPalette <- function (name, name2=NULL, name3=NULL,...){
   
-  cherrypickedpalette <- NULL
+  
   new_pal <- NULL
   
   if ((nargs() < 2) || (nargs() > 3)){
@@ -266,8 +266,7 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
 #' Show Palette Photo
 #' @description This function shows photo that inspired a palette
 #' @param name palette name
-#' @param ... Numeric, complex, or logical vectors.
-#' @usage ShowPalettePhoto(name)
+#' @param ... Numeric, complex, or logical vectors
 #' @return image of reference photo with palette
 #' @import jpeg
 #' @export
