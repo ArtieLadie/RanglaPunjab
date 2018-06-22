@@ -38,6 +38,7 @@ slices <- c(10, 12, 4, 16, 8)
 lbls <- c("US", "UK", "Australia", "Germany", "France")
 pie3D(slices,labels=lbls, explode=0.1, col=RanglaPunjab("Gidha"), main="Pie Chart of Countries ")
 ```
+![3-D Pie Chart](https://github.com/ArtieLadie/RanglaPunjab/blob/master/pics/3dpiechart.jpg)
 
 ### Bar Plot
 
@@ -51,6 +52,7 @@ barplot(counts, main="Car Distribution by Gears and VS",
         xlab="Number of Gears", col=CherryPickPalette("Teej","Jutti"),
         legend = rownames(counts))
 ```
+![Bar Plot](https://github.com/ArtieLadie/RanglaPunjab/blob/master/pics/animatedbarplot.gif)
 
 # Palettes
 
