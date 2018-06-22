@@ -4,7 +4,7 @@
 \alias{PaintPalette}
 \title{Paint Palette}
 \usage{
-PaintPalette(name, name2, name3)
+PaintPalette(name = NULL, name2 = NULL, name3 = NULL, ...)
 }
 \arguments{
 \item{name}{Name of 1st palette}
@@ -12,6 +12,8 @@ PaintPalette(name, name2, name3)
 \item{name2}{Name of 2nd (optional) palette}
 
 \item{name3}{Name of 3rd (optional) palette}
+
+\item{...}{Numeric, complex, or logical vectors}
 }
 \value{
 image of colors and description

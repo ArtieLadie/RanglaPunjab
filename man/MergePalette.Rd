@@ -4,7 +4,7 @@
 \alias{MergePalette}
 \title{Merge Palette}
 \usage{
-MergePalette(name, name2, name3)
+MergePalette(name, name2 = NULL, name3 = NULL, ...)
 }
 \arguments{
 \item{name}{Name of 1st palette}
@@ -12,6 +12,8 @@ MergePalette(name, name2, name3)
 \item{name2}{Name of 2nd palette}
 
 \item{name3}{Name of 3nd (optional) palette}
+
+\item{...}{Numeric, complex, or logical vectors}
 }
 \value{
 Vector of 10 or 15 color values (in the unlikely event there are duplicates, 

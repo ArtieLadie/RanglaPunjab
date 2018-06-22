@@ -30,7 +30,6 @@ cherrypickedpalette <<- NULL
 
 #' List Palette
 #' @description This function returns list of all palettes
-#' @usage ListPalette()
 #' @return List of palettes
 #  "FieldsOfPunjab"         "FieldsOfPunjab2"        "GoldenTemple"           "GoldenTemple2"         
 #  "Pindh"                  "Haveli"                 "Haveli2"                "AmritsariKulcha"       

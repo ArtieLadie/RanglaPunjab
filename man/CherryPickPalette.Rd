@@ -2,9 +2,9 @@
 % Please edit documentation in R/RanglaPunjab.R
 \name{CherryPickPalette}
 \alias{CherryPickPalette}
-\title{Cherry Pick Palette <---- UNDER CONSTRUCTION}
+\title{Cherry Pick Palette}
 \usage{
-CherryPickPalette(name, name2, name3)
+CherryPickPalette(name, name2 = NULL, name3 = NULL, ...)
 }
 \arguments{
 \item{name}{Name of 1st palette}
@@ -12,6 +12,8 @@ CherryPickPalette(name, name2, name3)
 \item{name2}{Name of 2nd palette}
 
 \item{name3}{Name of 3nd (optional) palette}
+
+\item{...}{Numeric, complex, or logical vectors}
 }
 \value{
 user-defined palette of colors
