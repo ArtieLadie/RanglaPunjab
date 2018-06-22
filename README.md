@@ -12,7 +12,7 @@ And if you ever visit India, [Rangla Punjab](https://haveli.co/rangla-punjab/) i
 
 In the meantime, enjoy this R package :-)
 
-## Installation
+# Installation
 
 To install stable CRAN version
 ```r
@@ -24,9 +24,9 @@ install.packages("devtools")
 devtools::install_github("ArtieLadie/RanglaPunjab")
 ```
 
-## Sample Code
+# Sample Code
 
-### 3-D Pie Chart
+## 3-D Pie Chart
 
 Use `RanglaPunjab` to color pie charts.
 
@@ -40,7 +40,7 @@ pie3D(slices,labels=lbls, explode=0.1, col=RanglaPunjab("Gidha"), main="Pie Char
 ```
 ![3-D Pie Chart](https://github.com/ArtieLadie/RanglaPunjab/blob/master/pics/3dpiechart.jpg)
 
-### Bar Plot
+## Bar Plot
 
 Use `CherryPickPalette` to dynamically color bar plots.
 
