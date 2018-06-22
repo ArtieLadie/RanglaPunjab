@@ -231,7 +231,7 @@ CustomPal <- function(new_pal){
 
 
 
-#' Cherry Pick Palette <---- UNDER CONSTRUCTION
+#' Cherry Pick Palette
 #' @description This function allows user to cherry pick colors from 2 to 3 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
@@ -245,6 +245,7 @@ CustomPal <- function(new_pal){
 #' CherryPickPalette("BiryaniRice","Kulfi","Haveli2")
 CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   
+  cherrypickedpalette <- NULL
   new_pal <- NULL
   
   if ((nargs() < 2) || (nargs() > 3)){
@@ -258,13 +259,14 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
   }
   
   cherrypickedpalette <- CustomPal(new_pal)
-
+  
   
 }
 
 #' Show Palette Photo
 #' @description This function shows photo that inspired a palette
 #' @param name palette name
+#' @param ... Numeric, complex, or logical vectors.
 #' @usage ShowPalettePhoto(name)
 #' @return image of reference photo with palette
 #' @import jpeg
@@ -273,7 +275,12 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL){
 #' ShowPalettePhoto("GoldenTemple")
 #' ShowPalettePhoto("Kulfi")
 #' ShowPalettePhoto("AmritsariPedeWaliLassi")
-ShowPalettePhoto <- function(name=NULL){
+ShowPalettePhoto <- function(name=NULL,...){
+  
+ if (nargs() > 1){
+    stop("Enter 1 valid palette. Run ListPalette() for list of palettes.")
+  }
+  
   pal <- RanglaPunjab(name)
   x <- tolower(name)
   sysloc <- system.file(package="RanglaPunjab")
