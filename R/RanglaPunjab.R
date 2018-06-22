@@ -230,7 +230,7 @@ CustomPal <- function(new_pal){
 
 
 
-#' Cherry Pick Palette
+#' Cherry Pick Palette --- Getting Facelift
 #' @description This function allows user to cherry pick colors from 2 to 3 palettes
 #' @param name Name of 1st palette
 #' @param name2 Name of 2nd palette
@@ -259,10 +259,17 @@ CherryPickPalette <- function (name, name2=NULL, name3=NULL,...){
   
   cherrypickedpalette <- CustomPal(new_pal)
   
+}
+
+# Under Construction
+# Internal, hidden function
+# Called by ShowPalettePhoto()
+RenderPhoto <- function(name=NULL,...){
   
 }
 
-#' Show Palette Photo
+
+#' Show Palette Photo --- Getting Facelift
 #' @description This function shows photo that inspired a palette
 #' @param name palette name
 #' @param ... Numeric, complex, or logical vectors

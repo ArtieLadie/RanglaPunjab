@@ -2,7 +2,7 @@
 % Please edit documentation in R/RanglaPunjab.R
 \name{ShowPalettePhoto}
 \alias{ShowPalettePhoto}
-\title{Show Palette Photo}
+\title{Show Palette Photo --- Getting Facelift}
 \usage{
 ShowPalettePhoto(name = NULL, ...)
 }

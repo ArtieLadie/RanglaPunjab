@@ -1,6 +1,6 @@
 Package: RanglaPunjab
 Title: Displays Palette of 5 Colors
-Version: 2.3.1
+Version: 2.5.2
 Authors@R: person("Sonia", "Ahluwalia", email = "sonia.bhar.ahluwalia@gmail.com", role = c("aut", "cre"))
 Author: Sonia Ahluwalia [aut, cre]
 Maintainer: Sonia Ahluwalia <sonia.bhar.ahluwalia@gmail.com>
