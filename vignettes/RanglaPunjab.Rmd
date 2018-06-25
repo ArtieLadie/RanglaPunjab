@@ -4,7 +4,7 @@ author: "Sonia Bhar Ahluwalia"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Package RanglaPunjab}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -30,6 +30,7 @@ In the meantime, enjoy this R package :-)
 <li><a href="#ranglapunjab">Rangla Punjab: <code>RanglaPunjab(name)</code></a></li>
 <li><a href="#listpalette">List Palette: <code>ListPalette()</code></a></li>
 <li><a href="#mergepalette">Merge Palette: <code>MergePalette(name, name2, name3)</code></a></li>
+<li><a href="#sortpalette">Sort Palette: <code>MergePalette(name, name2, name3)</code></a></li>
 <li><a href="#paintpalette">Paint Palette: <code>PaintPalette(name, name2, name3)</code></a></li>
 <li><a href="#cherrypickpalette">Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3)</code></a></li>
 <li><a href="#showpalettephoto">Show Palette Photo: <code>ShowPalettePhoto(name)</code></a></li>
@@ -71,6 +72,10 @@ Input 2 to 3 palettes to merge into new palette
 MergePalette("AmritsariKulcha", "Phulkari2")
 [1] "#e3e4d9" "#ebdc9c" "#b3340e" "#67140a" "#2a231d" "#9c1a41" "#42a4e8" "#3a35da" "#ee523c" "#3e167c"
 ```
+
+<h2 id="sortpalette">
+Sort Palette: UNDER CONSTRUCTION <code>SortPalette(name, name2, name3)</code>
+</h2>
 
 <h2 id="paintpalette">
 Paint Palette: <code>PaintPalette(name, name2, name3)</code>
