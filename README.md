@@ -54,6 +54,14 @@ barplot(counts, main="Car Distribution by Gears and VS",
 ```
 ![Bar Plot](https://github.com/ArtieLadie/RanglaPunjab/blob/master/pics/animatedbarplot.gif)
 
+## Julia Set
+
+Why not have fun with colors?
+
+This [code](https://github.com/ArtieLadie/Julia/blob/master/JuliaSet.R) (using Paranda palette) creates the following animation (requires [ImageMagick](https://www.imagemagick.org/script/download.php))
+
+![Julia Set](https://github.com/ArtieLadie/Julia/blob/master/julia.gif)
+
 # Palettes
 
 ### FieldsOfPunjab
