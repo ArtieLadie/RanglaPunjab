@@ -60,7 +60,7 @@ Why not have fun with colors?
 
 This [code](https://github.com/ArtieLadie/Julia/blob/master/JuliaSet.R) (using Paranda palette) creates the following animation (requires [ImageMagick](https://www.imagemagick.org/script/download.php))
 
-![Julia Set](https://github.com/ArtieLadie/Julia/blob/master/julia.gif)
+![Julia Set](https://github.com/ArtieLadie/ColorsOfTheWind/blob/master/JuliaSet/julia.gif)
 
 # Palettes
 
