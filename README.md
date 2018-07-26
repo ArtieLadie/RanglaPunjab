@@ -1,12 +1,10 @@
 # RanglaPunjab 
 [![CRAN](http://www.r-pkg.org/badges/version/RanglaPunjab)](https://cran.rstudio.com/web/packages/RanglaPunjab/index.html) 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-![](https://cranlogs.r-pkg.org/badges/last-day/RanglaPunjab)
-![](https://cranlogs.r-pkg.org/badges/RanglaPunjab)
-![](https://cranlogs.r-pkg.org/badges/grand-total/RanglaPunjab)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) 
+[![](https://cranlogs.r-pkg.org/badges/RanglaPunjab)](https://cran.r-project.org/package=RanglaPunjab)
 
 
-R code that defines color palettes based on the [unique, vibrant culture of Punjab, India](https://www.youtube.com/watch?v=wDheWYmNEhQ). 
+R code that defines color palettes based on the unique, vibrant culture of Punjab, India. 
 
 Rangla Punjab translates to "Colorful Punjab".
 
@@ -56,14 +54,6 @@ barplot(counts, main="Car Distribution by Gears and VS",
 ```
 ![Bar Plot](https://github.com/ArtieLadie/RanglaPunjab/blob/master/pics/animatedbarplot.gif)
 
-## Julia Set
-
-Why not have fun with colors?
-
-This [code](https://github.com/ArtieLadie/ColorsOfTheWind/blob/master/JuliaSet/JuliaSet.R) (using `RanglaPunjab("Paranda")`) creates the following animation (requires [ImageMagick](https://www.imagemagick.org/script/download.php))
-
-![Julia Set](https://github.com/ArtieLadie/ColorsOfTheWind/blob/master/JuliaSet/julia.gif)
-
 # Palettes
 
 ### FieldsOfPunjab
@@ -76,7 +66,7 @@ All are tributaries of the Indus River, the Chenab being the largest.
 
 The five rivers makes Punjab one of the most fertile regions of India. 
 
-Plus the fields provide beautiful backdrop to Bollywood Films.
+Plus the fields provide beautiful backdrop to Bollywood Films, such as [this Blockbuster](https://www.youtube.com/watch?v=wDheWYmNEhQ).
 
 ![Fields of Punjab](https://github.com/ArtieLadie/RanglaPunjab/blob/master/inst/img/fieldsofpunjab.jpg)
 

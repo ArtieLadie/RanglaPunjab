@@ -11,10 +11,8 @@
 #' ShowPalettePhoto("AmritsariPedeWaliLassi")
 ShowPalettePhoto <- function(name=NULL,...){
   
-  if (nargs() == 0){
-    stop("Coming Soon - dynamic dropdown!")
-  }
-  if (nargs() > 1){
+
+  if ((nargs() > 1) || (nargs() < 1)){
     stop("Enter 1 valid palette. Run ListPalette() for list of palettes.")
   }
   
@@ -25,5 +23,4 @@ ShowPalettePhoto <- function(name=NULL,...){
   jj <- readJPEG(x,native=TRUE)
   graphics::plot(0:1,0:1,type="n",ann=FALSE,axes=FALSE)
   graphics::rasterImage(jj,0,0,1,1)
-  print(noquote("Depreciated, please use ShowPalettePhoto() for dynamic dropdown"))
 }
