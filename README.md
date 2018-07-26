@@ -1,7 +1,7 @@
 # RanglaPunjab 
 [![CRAN](http://www.r-pkg.org/badges/version/RanglaPunjab)](https://cran.rstudio.com/web/packages/RanglaPunjab/index.html) 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) 
-[![](https://cranlogs.r-pkg.org/badges/RanglaPunjab)](https://cran.r-project.org/package=RanglaPunjab)
+[![](https://cranlogs.r-pkg.org/badges/RanglaPunjab)](https://cran.r-project.org/package=RanglaPunjab) 
 
 
 R code that defines color palettes based on the unique, vibrant culture of Punjab, India. 
