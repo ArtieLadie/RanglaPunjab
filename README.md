@@ -6,7 +6,7 @@
 ![](https://cranlogs.r-pkg.org/badges/grand-total/RanglaPunjab)
 
 
-R code that defines color palettes based on the unique, vibrant culture of [Punjab, India](https://www.youtube.com/watch?v=wDheWYmNEhQ). 
+R code that defines color palettes based on the [unique, vibrant culture of Punjab, India](https://www.youtube.com/watch?v=wDheWYmNEhQ). 
 
 Rangla Punjab translates to "Colorful Punjab".
 
