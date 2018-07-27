@@ -2,7 +2,7 @@
 % Please edit documentation in R/ShowPalettePhoto.R
 \name{ShowPalettePhoto}
 \alias{ShowPalettePhoto}
-\title{Show Palette Photo --- Getting Facelift}
+\title{Show Palette Photo}
 \usage{
 ShowPalettePhoto(name = NULL, ...)
 }

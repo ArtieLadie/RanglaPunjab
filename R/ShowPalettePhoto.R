@@ -1,4 +1,4 @@
-#' Show Palette Photo --- Getting Facelift
+#' Show Palette Photo
 #' @description This function shows photo that inspired a palette
 #' @param name palette name
 #' @param ... Numeric, complex, or logical vectors

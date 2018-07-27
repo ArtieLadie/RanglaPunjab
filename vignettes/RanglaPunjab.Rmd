@@ -1,5 +1,5 @@
 ---
-title: "Package RanglaPunjab"
+title: "R Package RanglaPunjab"
 author: "Sonia Bhar Ahluwalia"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-R code that defines color palettes based on the unique, vibrant culture of Punjab, India.
+R code that defines color palettes based on the [unique, vibrant culture of Punjab, India](https://www.youtube.com/watch?v=wDheWYmNEhQ).
 
 Rangla Punjab translates to "Colorful Punjab".
 
@@ -30,10 +30,14 @@ In the meantime, enjoy this R package :-)
 <li><a href="#ranglapunjab">Rangla Punjab: <code>RanglaPunjab(name)</code></a></li>
 <li><a href="#listpalette">List Palette: <code>ListPalette()</code></a></li>
 <li><a href="#mergepalette">Merge Palette: <code>MergePalette(name, name2, name3)</code></a></li>
-<li><a href="#sortpalette">Sort Palette: <code>MergePalette(name, name2, name3)</code></a></li>
 <li><a href="#paintpalette">Paint Palette: <code>PaintPalette(name, name2, name3)</code></a></li>
 <li><a href="#cherrypickpalette">Cherry Pick Palette: <code>CherryPickPalette(name, name2, name3)</code></a></li>
 <li><a href="#showpalettephoto">Show Palette Photo: <code>ShowPalettePhoto(name)</code></a></li>
+
+## Sample Code
+
+<li><a href="#3dpiechart">3-D Pie Chart</a></li>
+<li><a href="#animatedbarplot">Bar Plot</a></li>
 
 <h2 id="ranglapunjab">
 Rangla Punjab: <code>RanglaPunjab(name)</code>
@@ -73,10 +77,6 @@ MergePalette("AmritsariKulcha", "Phulkari2")
 [1] "#e3e4d9" "#ebdc9c" "#b3340e" "#67140a" "#2a231d" "#9c1a41" "#42a4e8" "#3a35da" "#ee523c" "#3e167c"
 ```
 
-<h2 id="sortpalette">
-Sort Palette: UNDER CONSTRUCTION <code>SortPalette(name, name2, name3)</code>
-</h2>
-
 <h2 id="paintpalette">
 Paint Palette: <code>PaintPalette(name, name2, name3)</code>
 </h2>
@@ -113,3 +113,35 @@ Input 1 palette to display photo that inspired these colors
 
 <img src="jutti3.jpg" alt="Jutti 3" width="680" height="auto">
 
+
+<h2 id="3dpiechart">
+3-D Pie Chart
+</h2>
+
+Use `RanglaPunjab` to color pie charts.
+
+```r
+library(RanglaPunjab)
+library(plotrix)
+
+slices <- c(10, 12, 4, 16, 8) 
+lbls <- c("US", "UK", "Australia", "Germany", "France")
+pie3D(slices,labels=lbls, explode=0.1, col=RanglaPunjab("Gidha"), main="Pie Chart of Countries ")
+```
+<img src="3dpiechart.jpg" alt="3-D Pie Chart" width="680" height="auto">
+
+<h2 id="animatedbarplot">
+Bar Plot
+</h2>
+
+Use `CherryPickPalette` to dynamically color bar plots.
+
+```r
+library(RanglaPunjab)
+
+counts <- table(mtcars$vs, mtcars$gear)
+barplot(counts, main="Car Distribution by Gears and VS",
+        xlab="Number of Gears", col=CherryPickPalette("Teej","Jutti"),
+        legend = rownames(counts))
+```
+<img src="animatedbarplot.gif" alt="Bar Plot" width="680" height="auto">
