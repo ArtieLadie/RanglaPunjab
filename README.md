@@ -4,6 +4,7 @@
 ![](https://cranlogs.r-pkg.org/badges/last-day/RanglaPunjab)
 ![](https://cranlogs.r-pkg.org/badges/RanglaPunjab)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/RanglaPunjab)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 
 R code that defines color palettes based on the [unique, vibrant culture of Punjab, India](https://www.youtube.com/watch?v=wDheWYmNEhQ). 
